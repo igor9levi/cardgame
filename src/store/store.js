@@ -1,10 +1,15 @@
 import React from 'react';
-import { createStore, combineReducers } from 'redux';
-import reducers from '../reducers';
+import { createStore } from 'redux';
+import reducer from '../reducers';
 
-export const store = createStore(
-    combineReducers({
-        state: reducers
-    }),
-    window.__REDUX_DEVTOOLS_EXTENSION && window._REDUX_DEVTOOLS_EXTENSION__()
-);
+console.log(reducer)
+
+const store = createStore(reducer);
+
+export default store;
+// export const store = createStore(
+//     combineReducers({
+//         state: reducers
+//     }),
+//     window.__REDUX_DEVTOOLS_EXTENSION && window._REDUX_DEVTOOLS_EXTENSION__()
+// );
