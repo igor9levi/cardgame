@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Welcome = ({setNumPlayers}) => (
+export const Welcome = ({ startGame }) => (
   <div>
     <h1 className="welcome-message">Hello! Please choose number of players</h1>
     <button
       type="button"
       onClick={() => {
-        setNumPlayers(2);
+        startGame(2);
       }}
     >
       Two Players
@@ -15,7 +15,7 @@ export const Welcome = ({setNumPlayers}) => (
     <button
       type="button"
       onClick={() => {
-        setNumPlayers(3);
+        startGame(3);
       }}
     >
       Three Players
@@ -23,7 +23,7 @@ export const Welcome = ({setNumPlayers}) => (
     <button
       type="button"
       onClick={() => {
-        setNumPlayers(4);
+        startGame(4);
       }}
     >
       Four Players
@@ -32,7 +32,7 @@ export const Welcome = ({setNumPlayers}) => (
 );
 
 Welcome.propTypes = {
-  setNumPlayers: PropTypes.func.isRequired,
+  startGame: PropTypes.func.isRequired,
 };
 
 export default Welcome;

@@ -7,6 +7,11 @@ export default (state = constants.INITIAL_STATE, action) => {
         ...state,
         numPlayers: action.payload,
       };
+    case constants.SET_DECK_ID:
+      return {
+        ...state,
+        deckId: action.payload,
+      };
     default:
       return state;
   }
