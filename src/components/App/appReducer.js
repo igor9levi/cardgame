@@ -6,6 +6,7 @@ export default (state = constants.INITIAL_STATE, action) => {
       return {
         ...state,
         numPlayers: action.payload,
+        status: constants.APP_STATUS.PLAY,
       };
     case constants.SET_DECK_ID:
       return {

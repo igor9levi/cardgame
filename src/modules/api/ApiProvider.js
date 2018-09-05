@@ -16,24 +16,10 @@ class ApiProvider {
         throw new Error('No success in fetching deck!');
       }
 
-      this.cardUrl = `https://deckofcardsapi.com/api/deck/${deck.deck_id}/draw/?count=1`;
       return deck.deck_id;
     } catch (error) {
       // Todo: dispatch error
       console.warn('Error fetching deck: ', error);
-    }
-  }
-
-  async getCard() {
-    try {
-      const response = await this.apiCall({ url: this.cardUrl });
-      const card = await response.json();
-      console.warn('resp: ', card);
-
-      return card;
-    } catch (error) {
-      // Todo: dispatch error
-      console.warn('Error fetching cards: ', error);
     }
   }
 

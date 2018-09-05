@@ -2,12 +2,11 @@ export const START_GAME = 'START_GAME';
 
 export const SET_DECK_ID = 'SET_DECK_ID';
 
-export const INITIAL_STATE = {
-  numPlayers: 0,
-  deckId: null,
-  players: [],
-};
-
+export const APP_STATUS = {
+  WELCOME: 1,
+  PLAY: 2,
+  END: 3,
+}
 export const NUM_ROUNDS = 10;
 export const CARD_VALUE_MAPPER = {
   ACE: 14,
@@ -25,8 +24,15 @@ export const CARD_VALUE_MAPPER = {
   2: 2,
 };
 export const SUIT_MAPPER = {
-  SPADES: 0,
-  DIAMONDS: 1,
-  HEARTS: 2,
-  CLUBS: 3,
+  SPADES: 1,
+  DIAMONDS: 2,
+  HEARTS: 3,
+  CLUBS: 4,
+};
+
+export const INITIAL_STATE = {
+  status: APP_STATUS.WELCOME,
+  numPlayers: 0,
+  deckId: null,
+  players: [],
 };
