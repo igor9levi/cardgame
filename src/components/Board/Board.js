@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import './Board.css';
+import Card from './Card';
 
 class Board extends PureComponent {
   static propTypes = {
@@ -12,8 +13,7 @@ class Board extends PureComponent {
 
     console.warn(this.props);
     return cards.map(card => (
-      <img
-        className="player-cards"
+      <Card
         key={card.code}
         alt={card.value}
         src={card.image}
@@ -26,9 +26,9 @@ class Board extends PureComponent {
 
     return (
       <div className="board">
-        {/*<div className="player">*/}
+        {/* <div className="player"> */}
         {this.renderPlayer(cards)}
-        {/*</div>*/}
+        {/* </div> */}
       </div>
     );
   }
