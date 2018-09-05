@@ -18,7 +18,11 @@ export class App extends Component {
       return <Board />;
     }
 
-    return <ScoreBoard />;
+    if (status === APP_STATUS.END) {
+      return <ScoreBoard />;
+    }
+
+    return <h1>Loading...</h1>;
   }
 
   render() {
