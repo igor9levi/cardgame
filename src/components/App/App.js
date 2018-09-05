@@ -10,6 +10,8 @@ export class App extends Component {
   renderApp = () => {
     const { status } = this.props;
 
+    // return <Board />;
+
     if (status === APP_STATUS.WELCOME) {
       return <Welcome />;
     }

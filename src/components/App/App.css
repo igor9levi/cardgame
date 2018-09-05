@@ -1,11 +1,13 @@
 .App {
   text-align: center;
   background-color: darkgreen;
-  /* max-width: 600px; */
-  /* max-height: 400px; */
+   /*max-width: 600px;*/
+   /*max-height: 400px;*/
   width: 600px;
   height: 400px;
+  margin: 30px auto auto;
   display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: center;
   justify-content: center;
