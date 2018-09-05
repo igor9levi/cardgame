@@ -1,6 +1,7 @@
+import * as playerConstants from '../../modules/Player/playerConstants';
 import * as actionConstants from './appConstants';
-import apiProvider from '../../modules/api/ApiProvider';
 import * as selectors from './appSelectors';
+import apiProvider from '../../modules/api/ApiProvider';
 
 export const setNumPlayers = numPlayers => ({
   type: actionConstants.START_GAME,
@@ -12,21 +13,22 @@ export const setDeck = ({ deckId }) => ({
   payload: deckId,
 });
 
-export const getDeck = () => apiProvider.getDeck();
-export const getCards = ({ deckId, numPlayers }) => {
-  // const cards = [];
+export const setCards = ({ cards }) => ({
+  type: playerConstants.SET_CARDS,
+  payload: cards,
+});
 
-  const cards = apiProvider.getCards({ deckId, numRounds: actionConstants.NUM_ROUNDS });
-  console.warn('getCards: ', cards);
+export const getDeck = () => apiProvider.getDeck();
+export const getCards = async ({ deckId, numPlayers }) => {
+  const cards = [];
+
+  const response = await apiProvider.getCards({ deckId, numCards: actionConstants.NUM_ROUNDS * numPlayers });
+  for (let i = 0; i < numPlayers; i++) {
+    const med = response.slice(i * actionConstants.NUM_ROUNDS, ((i + 1) * actionConstants.NUM_ROUNDS));
+    cards.push(med);
+  }
 
   return cards;
-
-  // for (let i = 0; i < actionConstants.NUM_ROUNDS; i++) {
-  //   for (let j = 0; j < numPlayers; j++) {
-  //     const card = apiProvider.getCard(deckId);
-  //     cards.concat(card);
-  //   }
-  // }
 };
 
 export const startGame = numPlayers => async (dispatch, getState) => {
@@ -34,6 +36,5 @@ export const startGame = numPlayers => async (dispatch, getState) => {
   const deckId = await getDeck();
   dispatch(setDeck({ deckId }));
   const cards = await getCards({ deckId, numPlayers: selectors.getNumPlayers(getState()) });
-  console.warn('start game: ', cards);
-  // dispatch(setCards(cards));
+  dispatch(setCards({ cards }));
 };

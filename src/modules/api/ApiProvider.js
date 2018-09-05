@@ -11,7 +11,6 @@ class ApiProvider {
     try {
       const response = await this.apiCall({ url: this.deckUrl });
       const deck = await response.json();
-      console.warn(deck);
 
       if (deck.success !== true) {
         throw new Error('No success in fetching deck!');
@@ -38,15 +37,18 @@ class ApiProvider {
     }
   }
 
-  async getCards({ numRounds, deckId }) {
-    const url = `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=${numRounds}`;
+  async getCards({ numCards, deckId }) {
+    const url = `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=${numCards}`;
 
     try {
       const response = await this.apiCall({ url });
-      const card = await response.json();
-      console.warn('resp: ', card);
+      const cards = await response.json();
 
-      return card;
+      if (cards.success !== true) {
+        throw new Error('No success in fetching cards!');
+      }
+
+      return cards.cards;
     } catch (error) {
       // Todo: dispatch error
       console.warn('Error fetching cards: ', error);
