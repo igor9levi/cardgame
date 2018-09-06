@@ -36,8 +36,9 @@ export const getCards = async ({ deckId, numPlayers }) => {
 
   const response = await apiProvider.getCards({ deckId, numCards: appConstants.NUM_ROUNDS * numPlayers });
   for (let i = 0; i < numPlayers; i++) {
-    const med = response.slice(i * appConstants.NUM_ROUNDS, ((i + 1) * appConstants.NUM_ROUNDS));
-    cards.push(med);
+    const cardsForOnePlayer = response.slice(i * appConstants.NUM_ROUNDS, ((i + 1) * appConstants.NUM_ROUNDS));
+    const cardsWithPlayerId = cardsForOnePlayer.map(card => ({ ...card, playerId: i }));
+    cards.push(cardsWithPlayerId);
   }
 
   return cards;

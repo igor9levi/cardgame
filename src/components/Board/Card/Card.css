@@ -20,10 +20,3 @@
     /*animation-delay: -2s;*/
     /*animation-timing-function: ease-in-out;*/
 }
-
-@keyframes example {
-    /*from {background-color: red;}*/
-    /*to {background-color: yellow;}*/
-    from {top: 30px;}
-    to {bottom: 30px;}
-}
