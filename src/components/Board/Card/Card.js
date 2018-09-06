@@ -1,16 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Card.css';
+import { calculateTablePosition } from '../../../helpers/roundHelpers';
 
 class Card extends React.Component {
   static propTypes = {
     playerId: PropTypes.number.isRequired,
     center: PropTypes.object.isRequired,
+    addCardToTable: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
+    playRounds: PropTypes.func.isRequired,
+    alt: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
+    code: PropTypes.string.isRequired,
   }
 
   constructor(props) {
     super(props);
-    this.cardRef = React.createRef();
+    // this.cardRef = React.createRef();
+    // this[props.code] = React.createRef();
   }
 
   state = {
@@ -19,68 +27,71 @@ class Card extends React.Component {
     height: 50,
   }
 
-  calculateTablePosition = ({ playerId, cardHeight }) => {
-    switch (playerId) {
-      case 0:
-        return {
-          left: 0,
-          top: cardHeight,
-        };
-      case 1:
-        return {
-          left: -cardHeight,
-          top: 0,
-        };
-      case 2:
-        return {
-          left: 0,
-          top: -cardHeight,
-        };
-      case 3:
-        return {
-          left: cardHeight,
-          top: 0,
-        };
-      default:
-        return {
-          left: 0,
-          top: 0,
-        };
+  componentDidUpdate(prevProps) {
+    if (this.shouldAnimateCard({ old: prevProps, current: this.props })) {
+      this.animateCard();
+    }
+
+    if (this.shouldAnimateOff({ old: prevProps, current: this.props })) {
+      this.animateCardOff();
     }
   }
 
+  shouldAnimateCard = ({ old, current }) => {
+    const { table: oldTable } = old;
+    const { table: newTable, code } = current;
+    const codeInOldTable = oldTable.map(card => card.code).includes(code);
+    const codeInNewTable = newTable.map(card => card.code).includes(code);
+
+    return codeInNewTable && !codeInOldTable;
+  }
+
+  shouldAnimateOff = ({ old, current }) => {}
+
   animateCard = () => {
-    const { center, playerId } = this.props;
-    const cardHeight = this.cardRef.current.height;
-    const { top, left } = this.calculateTablePosition({ playerId, cardHeight });
+    const {
+      center, playerId, reference,
+    } = this.props;
+    // const cardHeight = this.cardRef.current.height;
+    const cardHeight = reference.current.height;
+
+    const { top, left } = calculateTablePosition({ playerId, cardHeight });
 
     this.setState({
       // cardStatus: 'player-card animate',
-
       styling: {
         position: 'absolute',
         left: center.centerX + left,
         top: center.centerY + top,
-        // left: 0,
-        // top: 0,
         zIndex: 1000,
       },
     });
-    // const { center } = this.props;
-    // const styles = {
-    //   // top: center.centerX, left: center.centerY
-    //   // display: 'none',
-    //   // width: '400px',
-    //   height: 200,
-    // };
-    // console.warn(styles)
-    // this.setState = ({
-    //   styles,
-    // });
+
+    // // Todo: move to parent and to clickHandler
+    // addCardToTable({ playerId, value });
+  }
+
+  animateCardOff = () => {}
+
+  handleClick = () => {
+    const {
+      playerId, playRounds, addCardToTable, value, code,
+    } = this.props;
+
+    // Todo: refactor this
+    const humanPlays = true;
+
+    if ((playerId !== 0) || !humanPlays) {
+      // Todo: uncomment this after implement computner play
+      // return;
+    }
+
+    addCardToTable({ playerId, value, code });
+    playRounds();
   }
 
   render() {
-    const { alt, src } = this.props;
+    const { alt, src, propStyles } = this.props;
     const { cardStatus, height, styling } = this.state;
 
     const styles = {
@@ -92,11 +103,11 @@ class Card extends React.Component {
 
     return (
       <img
-        ref={this.cardRef}
+        ref={this.props.reference}
         className={cardStatus}
         alt={alt}
         src={src}
-        onClick={this.animateCard}
+        onClick={this.handleClick}
         style={styles.container}
       />
     );

@@ -12,7 +12,6 @@ export const APP_STATUS = {
   END: 4,
 };
 export const CARD_VALUE_MAPPER = {
-  ACE: 14,
   KING: 13,
   QUEEN: 12,
   JACK: 11,
@@ -25,6 +24,7 @@ export const CARD_VALUE_MAPPER = {
   4: 4,
   3: 3,
   2: 2,
+  ACE: 1,
 };
 export const SUIT_MAPPER = {
   SPADES: 1,
@@ -36,5 +36,4 @@ export const INITIAL_STATE = {
   status: APP_STATUS.WELCOME,
   numPlayers: 0,
   deckId: null,
-  players: [],
 };
