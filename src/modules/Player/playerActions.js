@@ -10,6 +10,7 @@ export const addCardToTable = card => ({
   payload: card,
 });
 
-export const flushTable = () => ({
+export const flushTable = player => ({
   type: constants.FLUSH_TABLE,
+  payload: player,
 });

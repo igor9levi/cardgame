@@ -1,1 +1,1 @@
-export { default } from './ScoreBoard';
+export { default } from './ScoreBoardContainer';

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import Random from 'random-js';
 import './Board.css';
 import Card from './Card';
 import { calculateRoundWinner } from '../../helpers/roundHelpers';
@@ -12,6 +13,7 @@ class Board extends PureComponent {
     score: PropTypes.arrayOf(PropTypes.number),
     addCardToTable: PropTypes.func.isRequired,
     flushTable: PropTypes.func.isRequired,
+    setEndStatus: PropTypes.func.isRequired,
   }
 
   static defaultProps = {
@@ -29,11 +31,6 @@ class Board extends PureComponent {
     this.playersTurn = [...Array(props.numPlayers).keys()];
 
     this.refTable = React.createRef();
-    // props.cards.map(item => item.map((card) => {
-    //   const ref = React.createRef();
-    //   this[card.code] = ref;
-    //   return ref;
-    // }));
   }
 
   componentDidMount() {
@@ -44,6 +41,10 @@ class Board extends PureComponent {
   }
 
   componentDidUpdate(prevProps) {
+    if (this.gameEnd()) {
+      return this.props.setEndStatus();
+    }
+
     if (this.props.table.length === this.props.numPlayers) {
       return this.resetRound();
     }
@@ -51,6 +52,13 @@ class Board extends PureComponent {
     if (this.props.table.length !== prevProps.table.length) {
       this.playRound();
     }
+  }
+
+  gameEnd = () => {
+    const { cards } = this.props;
+    const flat = cards.reduce((acc, val) => acc.concat(val), []);
+    console.warn(flat)
+    return flat.length === 0;
   }
 
   shufflePlayers = () => {
@@ -65,7 +73,8 @@ class Board extends PureComponent {
     if (playersTurn[0] === 0) return;
 
     // Todo: pick random number between 0 and playersTurn[0].length-1
-    const randomNumber = 5;
+    const max = cards[playersTurn[0]].length - 1;
+    const randomNumber = Random.integer(0, max)(Random.engines.nativeMath);
     const card = cards[playersTurn[0]][randomNumber];
     this.shufflePlayers();
     const { playerId, value, code } = card;
@@ -79,37 +88,15 @@ class Board extends PureComponent {
   }
 
   resetRound = () => {
-    // Todo: calculate round winner, update player score (winnerCard.playerId), dispatch flush table
     // Todo: add radnomness and remove card from deck
     const winnerCard = calculateRoundWinner(this.props.table);
-    const winner = winnerCard.playerId;
-    this.props.flushTable();
-    this.setWinnerToPlay(winner);
+    const player = winnerCard.playerId;
+    this.props.flushTable({ player });
+    this.setWinnerToPlay(player);
   }
 
   playRounds = () => {
     if (this.playersTurn[0] === 0) this.shufflePlayers();
-
-    // while (this.playersTurn[0] !== 0) {
-    //   this.playRound();
-    //   if (this.props.table.length === this.props.numPlayers) {
-    //     this.resetRound();
-    //     if (this.props.cards.length === 0) {
-    //       // Todo: Dispatch end game
-    //     }
-    //   } else {
-    //     this.shufflePlayers();
-    //   }
-    // }
-    //
-    // console.warn(this.props)
-    //
-    // if (this.props.table.length === this.props.numPlayers) {
-    //   this.resetRound();
-    //   if (this.props.cards.length === 0) {
-    //     // Todo: Dispatch end game
-    //   }
-    // }
   }
 
   renderPlayer = ({ cards, player }) => {

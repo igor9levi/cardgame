@@ -41,3 +41,9 @@ export const calculateTablePosition = ({ playerId, cardHeight }) => {
       };
   }
 };
+
+export const updateScore = ({ player, score }) => score.map((item, i) => (i === player ? item + 1 : item));
+
+export const removeCardsFromPlayer = ({ cards, table }) => {
+  return cards.map(player => player.filter(card => !table.map(item => item.code).includes(card.code)));
+}

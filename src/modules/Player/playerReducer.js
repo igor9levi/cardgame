@@ -1,6 +1,6 @@
 import * as constants from './playerConstants';
 import { GAME_START } from '../../components/App/appConstants';
-import { playerWinsRound } from '../../helpers/roundHelpers';
+import { playerWinsRound, removeCardsFromPlayer, updateScore } from '../../helpers/roundHelpers';
 
 export default (state = constants.INITIAL_STATE, action) => {
   switch (action.type) {
@@ -22,7 +22,9 @@ export default (state = constants.INITIAL_STATE, action) => {
     case constants.FLUSH_TABLE:
       return {
         ...state,
+        cards: removeCardsFromPlayer({ cards: state.cards, table: state.table }),
         table: [],
+        score: updateScore({ player: action.payload.player, score: state.score }),
       };
     case constants.SET_ROUND_WINNER:
       return {

@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import BoardComponent from './Board';
 import { getCards } from '../../modules/Player/playerSelectors';
 import { addCardToTable, flushTable } from '../../modules/Player/playerActions';
+import { setEndStatus } from '../App/appActions';
 
 const mapStateToProps = state => ({
   cards: getCards(state),
@@ -10,4 +11,4 @@ const mapStateToProps = state => ({
   table: state.player.table,
 });
 
-export default connect(mapStateToProps, { addCardToTable, flushTable })(BoardComponent);
+export default connect(mapStateToProps, { addCardToTable, flushTable, setEndStatus })(BoardComponent);
