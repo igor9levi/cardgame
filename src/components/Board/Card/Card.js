@@ -13,6 +13,7 @@ class Card extends React.Component {
     alt: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
     code: PropTypes.string.isRequired,
+    blockClick: PropTypes.bool.isRequired,
   }
 
   constructor(props) {
@@ -84,13 +85,10 @@ class Card extends React.Component {
 
   handleClick = () => {
     const {
-      playerId, playRounds, addCardToTable, value, code,
+      playerId, playRounds, addCardToTable, value, code, blockClick,
     } = this.props;
 
-    // Todo: refactor this
-    const humanPlays = true;
-
-    if ((playerId !== 0) || !humanPlays) {
+    if ((playerId !== 0) || blockClick) {
       return;
     }
 
@@ -102,6 +100,7 @@ class Card extends React.Component {
     const { alt, src } = this.props;
     const { cardStatus, height, styling } = this.state;
 
+    // Todo: set responsive height
     const styles = {
       container: {
         height,
