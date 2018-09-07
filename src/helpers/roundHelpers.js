@@ -1,11 +1,14 @@
+import { CARD_VALUE_MAPPER } from '../components/App/appConstants';
+
 export const playerWinsRound = ({ score, payload }) => {
   const { hand, player } = payload;
   score.map((item, index) => (index === player ? item[index].concat(hand) : item));
 };
 
 export const calculateRoundWinner = (table) => {
-  // Todo: user value mapper
-  const winnerCard = table.reduce((acc, next) => (next.value > acc.value ? next : acc), table[0]);
+  const winnerCard = table.reduce((acc, next) => (
+    CARD_VALUE_MAPPER[next.value] >= CARD_VALUE_MAPPER[acc.value] ? next : acc
+  ), table[0]);
   return winnerCard;
 };
 

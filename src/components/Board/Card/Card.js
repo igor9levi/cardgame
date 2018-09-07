@@ -17,8 +17,8 @@ class Card extends React.Component {
 
   constructor(props) {
     super(props);
-    // this.cardRef = React.createRef();
-    // this[props.code] = React.createRef();
+    this.cardRef = React.createRef();
+    this[props.code] = React.createRef();
   }
 
   state = {
@@ -46,14 +46,21 @@ class Card extends React.Component {
     return codeInNewTable && !codeInOldTable;
   }
 
-  shouldAnimateOff = ({ old, current }) => {}
+  shouldAnimateOff = ({ old, current }) => {
+    const { table: oldTable } = old;
+    const { table: newTable, code } = current;
+    const codeInOldTable = oldTable.map(card => card.code).includes(code);
+    const isNewTableEmpty = newTable.length === 0;
+
+    return isNewTableEmpty && codeInOldTable;
+  }
 
   animateCard = () => {
     const {
-      center, playerId, reference,
+      center, playerId, // reference,
     } = this.props;
-    // const cardHeight = this.cardRef.current.height;
-    const cardHeight = reference.current.height;
+    const cardHeight = this.cardRef.current.height;
+    // const cardHeight = reference.current.height;
 
     const { top, left } = calculateTablePosition({ playerId, cardHeight });
 
@@ -71,7 +78,20 @@ class Card extends React.Component {
     // addCardToTable({ playerId, value });
   }
 
-  animateCardOff = () => {}
+  animateCardOff = () => {
+    this.setState({
+      // cardStatus: 'player-card animate',
+      styling: {
+        left: 400,
+        top: 100,
+        // display: 'none',
+        // position: 'absolute',
+        // left: center.centerX + left,
+        // top: center.centerY + top,
+        // zIndex: 1000,
+      },
+    });
+  }
 
   handleClick = () => {
     const {
@@ -86,8 +106,8 @@ class Card extends React.Component {
       // return;
     }
 
-    addCardToTable({ playerId, value, code });
     playRounds();
+    addCardToTable({ playerId, value, code });
   }
 
   render() {
@@ -103,7 +123,7 @@ class Card extends React.Component {
 
     return (
       <img
-        ref={this.props.reference}
+        ref={this.cardRef}
         className={cardStatus}
         alt={alt}
         src={src}

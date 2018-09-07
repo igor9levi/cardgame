@@ -1,8 +1,8 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import './Board.css';
 import Card from './Card';
-import {calculateRoundWinner} from '../../helpers/roundHelpers';
+import { calculateRoundWinner } from '../../helpers/roundHelpers';
 
 class Board extends PureComponent {
   static propTypes = {
@@ -26,14 +26,14 @@ class Board extends PureComponent {
     };
     this.state = this.initialState;
 
-    this.playerTurns = [...Array(props.numPlayers).keys()];
+    this.playersTurn = [...Array(props.numPlayers).keys()];
 
     this.refTable = React.createRef();
-    props.cards.map(item => item.map((card) => {
-      const ref = React.createRef();
-      this[card.code] = ref;
-      return ref;
-    }));
+    // props.cards.map(item => item.map((card) => {
+    //   const ref = React.createRef();
+    //   this[card.code] = ref;
+    //   return ref;
+    // }));
   }
 
   componentDidMount() {
@@ -43,42 +43,73 @@ class Board extends PureComponent {
     });
   }
 
-  shufflePlayers = () => {
-    const { playerTurns } = this;
-    this.playerTurns = playerTurns.slice(1).concat(playerTurns[0]);
+  componentDidUpdate(prevProps) {
+    if (this.props.table.length === this.props.numPlayers) {
+      return this.resetRound();
+    }
+
+    if (this.props.table.length !== prevProps.table.length) {
+      this.playRound();
+    }
   }
 
-  computerPlay = () => {
-    const { cards, addCardToTable } = this.props;
-    const { playerTurns } = this;
+  shufflePlayers = () => {
+    const { playersTurn } = this;
+    this.playersTurn = playersTurn.slice(1).concat(playersTurn[0]);
+  }
 
-    // Todo: pick random number between 0 and playerTurns[0].length-1
+  playRound = () => {
+    const { cards, addCardToTable } = this.props;
+    const { playersTurn } = this;
+
+    if (playersTurn[0] === 0) return;
+
+    // Todo: pick random number between 0 and playersTurn[0].length-1
     const randomNumber = 5;
-    const card = cards[playerTurns[0]][randomNumber];
+    const card = cards[playersTurn[0]][randomNumber];
+    this.shufflePlayers();
     const { playerId, value, code } = card;
     addCardToTable({ playerId, value, code });
   }
 
-  startNewRound = () => {
+  setWinnerToPlay = (winner) => {
+    while (this.playersTurn[0] !== winner) {
+      this.shufflePlayers();
+    }
+  }
+
+  resetRound = () => {
     // Todo: calculate round winner, update player score (winnerCard.playerId), dispatch flush table
+    // Todo: add radnomness and remove card from deck
     const winnerCard = calculateRoundWinner(this.props.table);
+    const winner = winnerCard.playerId;
     this.props.flushTable();
+    this.setWinnerToPlay(winner);
   }
 
   playRounds = () => {
-    this.shufflePlayers();
+    if (this.playersTurn[0] === 0) this.shufflePlayers();
 
-    while (this.playerTurns[0] !== 0) {
-      this.computerPlay();
-      if (this.props.table.length === this.props.numPlayers) {
-        this.startNewRound();
-        if (this.props.cards.length === 0) {
-          // Todo: Dispatch end game
-        }
-      } else {
-        this.shufflePlayers();
-      }
-    }
+    // while (this.playersTurn[0] !== 0) {
+    //   this.playRound();
+    //   if (this.props.table.length === this.props.numPlayers) {
+    //     this.resetRound();
+    //     if (this.props.cards.length === 0) {
+    //       // Todo: Dispatch end game
+    //     }
+    //   } else {
+    //     this.shufflePlayers();
+    //   }
+    // }
+    //
+    // console.warn(this.props)
+    //
+    // if (this.props.table.length === this.props.numPlayers) {
+    //   this.resetRound();
+    //   if (this.props.cards.length === 0) {
+    //     // Todo: Dispatch end game
+    //   }
+    // }
   }
 
   renderPlayer = ({ cards, player }) => {
@@ -88,7 +119,7 @@ class Board extends PureComponent {
 
     return cards[player].map(card => (
       <Card
-        reference={this[card.code]}
+        // reference={this[card.code]}
         key={card.code}
         code={card.code}
         alt={card.value}
