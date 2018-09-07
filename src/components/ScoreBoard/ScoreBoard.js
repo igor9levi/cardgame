@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ScoreBoard = ({ score }) => {
+const ScoreBoard = ({ score, setWelcomeStatus }) => {
   const winner = score.indexOf(Math.max(...score));
   return (
     <div>
@@ -16,12 +16,14 @@ const ScoreBoard = ({ score }) => {
           </div>
         ))}
       </div>
+      <button type="button" onClick={setWelcomeStatus}>Start new Game</button>
     </div>
   );
 };
 
 ScoreBoard.propTypes = {
   score: PropTypes.arrayOf(PropTypes.number).isRequired,
+  setWelcomeStatus: PropTypes.func.isRequired,
 };
 
 export default ScoreBoard;

@@ -56,12 +56,8 @@ class Card extends React.Component {
   }
 
   animateCard = () => {
-    const {
-      center, playerId, // reference,
-    } = this.props;
+    const { center, playerId } = this.props;
     const cardHeight = this.cardRef.current.height;
-    // const cardHeight = reference.current.height;
-
     const { top, left } = calculateTablePosition({ playerId, cardHeight });
 
     this.setState({
@@ -73,22 +69,15 @@ class Card extends React.Component {
         zIndex: 1000,
       },
     });
-
-    // // Todo: move to parent and to clickHandler
-    // addCardToTable({ playerId, value });
   }
 
+  // Todo: animate off towards the round winner
   animateCardOff = () => {
     this.setState({
       // cardStatus: 'player-card animate',
       styling: {
         left: 400,
         top: 100,
-        // display: 'none',
-        // position: 'absolute',
-        // left: center.centerX + left,
-        // top: center.centerY + top,
-        // zIndex: 1000,
       },
     });
   }
@@ -102,8 +91,7 @@ class Card extends React.Component {
     const humanPlays = true;
 
     if ((playerId !== 0) || !humanPlays) {
-      // Todo: uncomment this after implement computner play
-      // return;
+      return;
     }
 
     playRounds();
@@ -111,7 +99,7 @@ class Card extends React.Component {
   }
 
   render() {
-    const { alt, src, propStyles } = this.props;
+    const { alt, src } = this.props;
     const { cardStatus, height, styling } = this.state;
 
     const styles = {

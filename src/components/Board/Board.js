@@ -23,20 +23,16 @@ class Board extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.initialState = {
-      center: {},
-    };
+
+    this.initialState = { center: {} };
     this.state = this.initialState;
-
     this.playersTurn = [...Array(props.numPlayers).keys()];
-
     this.refTable = React.createRef();
   }
 
   componentDidMount() {
-    const center = this.getCenter();
     this.setState({
-      center,
+      center: this.getCenter(),
     });
   }
 
@@ -57,7 +53,6 @@ class Board extends PureComponent {
   gameEnd = () => {
     const { cards } = this.props;
     const flat = cards.reduce((acc, val) => acc.concat(val), []);
-    console.warn(flat)
     return flat.length === 0;
   }
 
@@ -72,7 +67,6 @@ class Board extends PureComponent {
 
     if (playersTurn[0] === 0) return;
 
-    // Todo: pick random number between 0 and playersTurn[0].length-1
     const max = cards[playersTurn[0]].length - 1;
     const randomNumber = Random.integer(0, max)(Random.engines.nativeMath);
     const card = cards[playersTurn[0]][randomNumber];
@@ -88,7 +82,6 @@ class Board extends PureComponent {
   }
 
   resetRound = () => {
-    // Todo: add radnomness and remove card from deck
     const winnerCard = calculateRoundWinner(this.props.table);
     const player = winnerCard.playerId;
     this.props.flushTable({ player });
