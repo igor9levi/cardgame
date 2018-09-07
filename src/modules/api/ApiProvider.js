@@ -36,8 +36,8 @@ class ApiProvider {
 
       return cards.cards;
     } catch (error) {
-      // Todo: dispatch error
       console.warn('Error fetching cards: ', error);
+      throw new Error(`Error fetching cards! ${error.message}`);
     }
   }
 }
