@@ -138,7 +138,6 @@ class Board extends PureComponent {
   render() {
     const { cards, score } = this.props;
 
-    // Todo: add show each individual score
     return (
       <div className="wrapper">
         <div className="top-row">

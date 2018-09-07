@@ -20,6 +20,7 @@ class ApiProvider {
     } catch (error) {
       // Todo: dispatch error
       console.warn('Error fetching deck: ', error);
+      throw new Error(`Error fetching deck: ${error.message}`)
     }
   }
 

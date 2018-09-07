@@ -20,6 +20,11 @@ export const setNumPlayers = numPlayers => ({
   payload: numPlayers,
 });
 
+export const setError = error => ({
+  type: appConstants.SET_ERROR,
+  payload: error,
+});
+
 export const setDeck = ({ deckId }) => ({
   type: appConstants.SET_DECK_ID,
   payload: deckId,
@@ -31,9 +36,9 @@ export const setCards = ({ cards }) => ({
 });
 
 export const getDeck = () => apiProvider.getDeck();
+
 export const getCards = async ({ deckId, numPlayers }) => {
   const cards = [];
-
   const response = await apiProvider.getCards({ deckId, numCards: appConstants.NUM_ROUNDS * numPlayers });
   for (let i = 0; i < numPlayers; i++) {
     const cardsForOnePlayer = response.slice(i * appConstants.NUM_ROUNDS, ((i + 1) * appConstants.NUM_ROUNDS));
@@ -46,9 +51,14 @@ export const getCards = async ({ deckId, numPlayers }) => {
 
 export const startGame = numPlayers => async (dispatch, getState) => {
   dispatch(setNumPlayers(numPlayers));
-  const deckId = await getDeck();
-  dispatch(setDeck({ deckId }));
-  const cards = await getCards({ deckId, numPlayers: selectors.getNumPlayers(getState()) });
-  dispatch(setCards({ cards }));
-  dispatch(setPlayStatus());
+  try {
+    const deckId = await getDeck();
+    dispatch(setDeck({ deckId }));
+
+    const cards = await getCards({ deckId, numPlayers: selectors.getNumPlayers(getState()) });
+    dispatch(setCards({ cards }));
+    dispatch(setPlayStatus());
+  } catch (error) {
+    dispatch(setError(error));
+  }
 };

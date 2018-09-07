@@ -8,7 +8,6 @@ const middleware = [thunk, logger];
 const store = createStore(
   reducer,
   applyMiddleware(...middleware),
-  // window.__REDUX_DEVTOOLS_EXTENSION && window._REDUX_DEVTOOLS_EXTENSION__(),
 );
 
 export default store;
