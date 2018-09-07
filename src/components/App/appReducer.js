@@ -28,6 +28,11 @@ export default (state = constants.INITIAL_STATE, action) => {
         ...state,
         deckId: action.payload,
       };
+    case constants.SET_ERROR:
+      return {
+        ...state,
+        error: action.payload,
+      };
     default:
       return state;
   }

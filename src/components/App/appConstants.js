@@ -37,4 +37,5 @@ export const INITIAL_STATE = {
   status: APP_STATUS.WELCOME,
   numPlayers: 0,
   deckId: null,
+  error: null,
 };
