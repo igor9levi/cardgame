@@ -65,13 +65,14 @@ class Board extends PureComponent {
     const { cards, addCardToTable } = this.props;
     const { playersTurn } = this;
 
-    if (playersTurn[0] === 0) return;
+    if (playersTurn[0] === 0) return; // Todo: unblock player
 
     const max = cards[playersTurn[0]].length - 1;
     const randomNumber = Random.integer(0, max)(Random.engines.nativeMath);
     const card = cards[playersTurn[0]][randomNumber];
-    this.shufflePlayers();
     const { playerId, value, code } = card;
+
+    this.shufflePlayers();
     addCardToTable({ playerId, value, code });
   }
 
@@ -89,7 +90,10 @@ class Board extends PureComponent {
   }
 
   playRounds = () => {
-    if (this.playersTurn[0] === 0) this.shufflePlayers();
+    if (this.playersTurn[0] === 0) {
+      // Todo: block player
+      this.shufflePlayers();
+    }
   }
 
   renderPlayer = ({ cards, player }) => {
@@ -97,19 +101,26 @@ class Board extends PureComponent {
 
     const { center } = this.state;
 
-    return cards[player].map(card => (
-      <Card
-        // reference={this[card.code]}
-        key={card.code}
-        code={card.code}
-        alt={card.value}
-        src={card.image}
-        center={center}
-        value={card.value}
-        playerId={card.playerId}
-        playRounds={this.playRounds}
-      />
-    ));
+    return cards[player].map((card) => {
+      const props = {
+        key: card.code,
+        code: card.code,
+        alt: card.value,
+        src: card.image,
+        center,
+        value: card.value,
+        playerId: card.playerId,
+        playRounds: this.playRounds,
+      };
+
+      if (player === 0) {
+        props.blockClick = false;
+      }
+
+      return (
+        <Card {...props} />
+      );
+    });
   }
 
   getCenter = () => {
