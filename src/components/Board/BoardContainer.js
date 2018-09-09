@@ -4,7 +4,7 @@ import { getCards } from '../../modules/Player/playerSelectors';
 import { addCardToTable, flushTable } from '../../modules/Player/playerActions';
 import { setEndStatus } from '../App/appActions';
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   cards: getCards(state),
   numPlayers: state.app.numPlayers,
   score: state.player.score,

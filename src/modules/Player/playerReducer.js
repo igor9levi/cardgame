@@ -26,11 +26,6 @@ export default (state = constants.INITIAL_STATE, action) => {
         table: [],
         score: updateScore({ player: action.payload.player, score: state.score }),
       };
-    case constants.SET_ROUND_WINNER:
-      return {
-        ...state,
-        score: playerWinsRound({ score: state.score, payload: action.payload }),
-      };
     default:
       return state;
   }
