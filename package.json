@@ -39,5 +39,12 @@
   },
   "setupFiles": [
     "/src/setupTests.js"
-  ]
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!node_modules/",
+      "!src/**/index.js"
+    ]
+  }
 }
