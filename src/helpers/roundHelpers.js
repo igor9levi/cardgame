@@ -1,13 +1,8 @@
 import { CARD_VALUE_MAPPER } from '../components/App/appConstants';
 
-export const playerWinsRound = ({ score, payload }) => {
-  const { hand, player } = payload;
-  score.map((item, index) => (index === player ? item[index].concat(hand) : item));
-};
-
 export const calculateRoundWinner = (table) => {
   const winnerCard = table.reduce((acc, next) => (
-    CARD_VALUE_MAPPER[next.value] >= CARD_VALUE_MAPPER[acc.value] ? next : acc
+    CARD_VALUE_MAPPER[next.value.toUpperCase()] >= CARD_VALUE_MAPPER[acc.value.toUpperCase()] ? next : acc
   ), table[0]);
   return winnerCard;
 };
@@ -46,6 +41,6 @@ export const updateScore = ({ player, score }) => score.map((item, i) => (i === 
 
 export const removeCardsFromPlayer = ({ cards, table }) => cards.map(
   player => player.filter(
-    card => !table.map(item => item.code).includes(card.code),
+    card => !table.map(item => item.code.toUpperCase()).includes(card.code.toUpperCase()),
   ),
 );

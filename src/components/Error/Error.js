@@ -4,7 +4,7 @@ const Error = ({ error }) => (
   <div>
     <div>
       Error Happened!
-    <div>
+    </div>
     <button>Try Again!</button>
   </div>
 );

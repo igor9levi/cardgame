@@ -111,6 +111,7 @@ class Board extends PureComponent {
         value: card.value,
         playerId: card.playerId,
         playRounds: this.playRounds,
+        blockClick: true,
       };
 
       if (player === 0) {
