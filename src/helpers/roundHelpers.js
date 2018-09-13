@@ -37,6 +37,21 @@ export const calculateTablePosition = ({ playerId, cardHeight }) => {
   }
 };
 
+export const cardMoveDirection = ({ playerId }) => {
+  switch (playerId) {
+    case 0:
+      return 'bottom';
+    case 1:
+      return 'left';
+    case 2:
+      return 'top';
+    case 3:
+      return 'right';
+    default:
+      return '';
+  }
+};
+
 export const updateScore = ({ player, score }) => score.map((item, i) => (i === player ? item + 1 : item));
 
 export const removeCardsFromPlayer = ({ cards, table }) => cards.map(

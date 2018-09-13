@@ -1,9 +1,14 @@
 .wrapper {
-
+    min-height: 400px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .top-row {
-
+    display: flex;
 }
 
 .middle-row {
@@ -16,12 +21,14 @@
 
 .player-left {
     flex: 1;
+    display: flex;
 }
 
 .player-right {
     flex: 1;
+    display: flex;
 }
 
 .bottom-row {
-
+    display: flex;
 }

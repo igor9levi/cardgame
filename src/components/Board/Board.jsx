@@ -46,7 +46,7 @@ class Board extends PureComponent {
     }
 
     if (this.props.table.length !== prevProps.table.length) {
-      this.playRound();
+      return this.playRound();
     }
   }
 

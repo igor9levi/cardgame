@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Card.css';
-import { calculateTablePosition } from '../../../helpers/roundHelpers';
+import { calculateTablePosition, cardMoveDirection } from '../../../helpers/roundHelpers';
+import back from '../../../img/hoyleback.jpg';
 
 class Card extends React.Component {
   static propTypes = {
@@ -20,17 +21,19 @@ class Card extends React.Component {
     super(props);
     this.cardRef = React.createRef();
     this[props.code] = React.createRef();
-  }
 
-  state = {
-    cardStatus: 'player-card',
-    styling: {},
-    height: 50,
+    this.state = {
+      cardStatus: 'player-card',
+      styling: {},
+      height: 50,
+      displayBack: props.playerId !== 0,
+    };
   }
 
   componentDidUpdate(prevProps) {
     if (this.shouldAnimateCard({ old: prevProps, current: this.props })) {
-      this.animateCard();
+      setTimeout(() => this.animateCard, 2000);
+      // this.animateCard();
     }
 
     if (this.shouldAnimateOff({ old: prevProps, current: this.props })) {
@@ -60,15 +63,21 @@ class Card extends React.Component {
     const { center, playerId } = this.props;
     const cardHeight = this.cardRef.current.height;
     const { top, left } = calculateTablePosition({ playerId, cardHeight });
+    const direction = cardMoveDirection({ playerId });
+
+    if (playerId !== 0) {
+      this.flipCard();
+    }
 
     this.setState({
-      // cardStatus: 'player-card animate',
-      styling: {
-        position: 'absolute',
-        left: center.centerX + left,
-        top: center.centerY + top,
-        zIndex: 1000,
-      },
+      displayBack: false,
+      // cardStatus: `player-card ${direction}-center`,
+      // styling: {
+      //   position: 'absolute',
+      //   left: center.centerX + left,
+      //   top: center.centerY + top,
+      //   zIndex: 1000,
+      // },
     });
   }
 
@@ -83,6 +92,12 @@ class Card extends React.Component {
     });
   }
 
+  flipCard = () => {
+    this.setState({
+      displayBack: false,
+    });
+  }
+
   handleClick = () => {
     const {
       playerId, playRounds, addCardToTable, value, code, blockClick,
@@ -92,13 +107,51 @@ class Card extends React.Component {
       return;
     }
 
-    playRounds();
-    addCardToTable({ playerId, value, code });
+    setTimeout(() => {
+      playRounds();
+      addCardToTable({ playerId, value, code });
+    }, 2000);
+  }
+
+  isHumanPlayer = () => this.props.playerId === 0;
+
+  renderCard = ({ src, alt }) => {
+    if (this.isHumanPlayer()) {
+      return (
+        <div className="front face">
+          <img
+            src={src}
+            alt={alt}
+            className="card-front img"
+          />
+        </div>
+      );
+    }
+    return (
+      <div id="f1_card" className="shadow">
+        <div className="front face">
+          <img
+            src={back}
+            alt="back of card"
+            className="card-back img"
+          />
+        </div>
+        <div className="back face center">
+          <img
+            src={src}
+            alt={alt}
+            className="card-front img"
+          />
+        </div>
+      </div>
+    );
   }
 
   render() {
     const { alt, src } = this.props;
-    const { cardStatus, height, styling } = this.state;
+    const {
+      cardStatus, height, styling, displayBack,
+    } = this.state;
 
     // Todo: set responsive height
     const styles = {
@@ -107,16 +160,26 @@ class Card extends React.Component {
         ...styling,
       },
     };
+    //
+    // // Todo add div wrapper flex: 1, and w, h 100% on image
+    // return (
+    //   <div>
+    //
+    //   <img
+    //     ref={this.cardRef}
+    //     className={cardStatus}
+    //     // alt={alt}
+    //     src={displayBack ? back : src}
+    //     onClick={this.handleClick}
+    //     // style={styles.container}
+    //   />
+    //   </div>
+    // );
 
     return (
-      <img
-        ref={this.cardRef}
-        className={cardStatus}
-        alt={alt}
-        src={src}
-        onClick={this.handleClick}
-        style={styles.container}
-      />
+      <div id="f1_container" onClick={this.handleClick}>
+        {this.renderCard({ src, alt })}
+      </div>
     );
   }
 }
