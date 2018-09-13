@@ -2,33 +2,48 @@
     min-height: 400px;
     display: flex;
     flex: 1;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .top-row {
     display: flex;
+    flex-direction: row;
 }
 
 .middle-row {
     display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .table {
     flex: 5;
+    min-height: 500px;
 }
 
 .player-left {
     flex: 1;
-    display: flex;
+    /*display: flex;*/
+    flex-direction: column;
 }
 
 .player-right {
     flex: 1;
-    display: flex;
+    /*display: flex;*/
+    /*flex-direction: column;*/
 }
 
 .bottom-row {
     display: flex;
+    flex-direction: row;
+}
+
+.player {
+    margin: 20px;
+
 }

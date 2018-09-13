@@ -128,7 +128,7 @@ class Card extends React.Component {
       );
     }
     return (
-      <div id="f1_card" className="shadow">
+      <div className="f1_card">
         <div className="front face">
           <img
             src={back}
@@ -177,7 +177,7 @@ class Card extends React.Component {
     // );
 
     return (
-      <div id="f1_container" onClick={this.handleClick}>
+      <div className="f1_container" onClick={this.handleClick}>
         {this.renderCard({ src, alt })}
       </div>
     );
