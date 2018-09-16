@@ -37,18 +37,34 @@ export const calculateTablePosition = ({ playerId, cardHeight = 50 }) => {
   }
 };
 
-export const cardMoveDirection = ({ playerId }) => {
+export const cardMoveDirection = ({ playerId, top, left }) => {
   switch (playerId) {
     case 0:
-      return 'bottom';
+      // return 'bottom';
+      return {
+        left,
+        top: 1000,
+      };
     case 1:
-      return 'left';
+      // return 'left';
+      return {
+        left: -1000,
+        top,
+      };
     case 2:
-      return 'top';
+      return {
+        left,
+        top: -1000,
+      };
+      // return 'top';
     case 3:
-      return 'right';
+      return {
+        left: 1000,
+        top,
+      };
+      // return 'right';
     default:
-      return '';
+      return {};
   }
 };
 

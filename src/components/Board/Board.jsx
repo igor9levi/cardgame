@@ -147,6 +147,8 @@ class Board extends PureComponent {
     return center;
   }
 
+  removeCards = () => {}
+
   removeCard = (cardId) => {
     let inside = false;
 

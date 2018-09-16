@@ -20,6 +20,10 @@ class Card extends React.Component {
     blockClick: PropTypes.bool.isRequired,
   }
 
+  static defaultProps = {
+    winner: null,
+  }
+
   constructor(props) {
     super(props);
     this.cardRef = React.createRef();
@@ -106,10 +110,9 @@ class Card extends React.Component {
 
   shouldAnimateOff = ({ old, current }) => {
     const { winner, table, code } = current;
-    const cardIsInTable = table.map(card => card.code).includes(code);
-    const result = cardIsInTable && (winner !== null) && (table.length > 0) && !this.flush;
+    const isCardInTable = table.map(card => card.code).includes(code);
+    const result = isCardInTable && (winner !== null) && (table.length > 0) && !this.flush;
 
-    // console.warn(result, this.props.flushTable);
     return result;
     // const { table: oldTable } = old;
     // const { table: newTable, code } = current;
@@ -130,10 +133,9 @@ class Card extends React.Component {
     const { center, playerId } = this.props;
     const cardHeight = this.cardRef.current.height;
     const { top, left } = calculateTablePosition({ playerId, cardHeight });
-    const direction = cardMoveDirection({ playerId });
 
     const leftPosition = center.centerX + left;
-    const topPosition =  center.centerY + top;
+    const topPosition = center.centerY + top;
 
     this.setState({
       centered: true,
@@ -152,16 +154,21 @@ class Card extends React.Component {
 
   // Todo: animate off towards the round winner
   animateCardOff = () => {
-    const { winner } = this.props;
-    const direction = cardMoveDirection({ playerId: winner });
-    console.warn('animating off ', direction);
+    const { winner, center } = this.props;
+    // const direction = cardMoveDirection({ playerId: winner });
+    const { left = 0, top = 0 } = cardMoveDirection({ playerId: winner, left: center.centerX, top: center.centerY });
+
     this.flush = true;
     this.setState({
       // cardStatus: 'player-card animate',
       // flush: true,
       styling: {
-        left: 550,
-        top: 50,
+        position: 'absolute',
+        transitionDuration: '0.5s',
+        left,
+        top,
+        // ...temp,
+        // transition: 'width 2s',
       },
     });
   }
