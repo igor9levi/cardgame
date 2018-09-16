@@ -16,7 +16,6 @@ class Card extends React.Component {
     }).isRequired,
     addCardToTable: PropTypes.func.isRequired,
     value: PropTypes.string.isRequired,
-    playRounds: PropTypes.func.isRequired,
     alt: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
     code: PropTypes.string.isRequired,
@@ -66,7 +65,7 @@ class Card extends React.Component {
   }
 
   removeCard = async () => {
-    await animation.pause(2000);
+    await animation.pause(200);
     return this.props.removeCard(this.props.code);
   }
 
@@ -80,7 +79,7 @@ class Card extends React.Component {
     const leftPosition = center.centerX + left;
     const topPosition = center.centerY + top;
 
-    await animation.pause(500);
+    await animation.pause(200);
 
     this.setState({
       centered: true,
@@ -111,20 +110,21 @@ class Card extends React.Component {
 
   playNextCard = async () => {
     const { animationFinished } = this.props;
-    await animation.pause(1000);
+    await animation.pause(200);
+    console.warn('Human finished!')
     animationFinished();
   }
 
   handleClick = () => {
     const {
-      playerId, playRounds, addCardToTable, value, code, blockClick,
+      playerId, addCardToTable, value, code, blockClick,
     } = this.props;
 
     if ((playerId !== HUMAN_PLAYER_ID) || blockClick) {
+      console.warn(' BLOCKED !!!')
       return;
     }
 
-    playRounds();
     addCardToTable({ playerId, value, code });
   }
 

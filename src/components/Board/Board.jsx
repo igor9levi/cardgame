@@ -14,7 +14,7 @@ class Board extends PureComponent {
     table: PropTypes.arrayOf(PropTypes.object),
     score: PropTypes.arrayOf(PropTypes.number),
     addCardToTable: PropTypes.func.isRequired,
-    // flushTable: PropTypes.func.isRequired,
+    flushTable: PropTypes.func.isRequired,
     setEndStatus: PropTypes.func.isRequired,
   }
 
@@ -26,9 +26,11 @@ class Board extends PureComponent {
   constructor(props) {
     super(props);
 
-    this.initialState = { center: {} };
+    this.initialState = {
+      center: {},
+      playersTurn: [...Array(props.numPlayers).keys()],
+    };
     this.state = this.initialState;
-    this.playersTurn = [...Array(props.numPlayers).keys()];
     this.refTable = React.createRef();
     this.purgatory = [];
   }
@@ -39,12 +41,17 @@ class Board extends PureComponent {
     });
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps, prevState) {
+    console.warn('cdu: ', this.state.playersTurn[0], prevState.playersTurn[0])
     if (this.gameEnd()) {
       return this.props.setEndStatus();
     }
 
     if ((this.props.table.length !== prevProps.table.length) && (this.props.table.length === 0)) {
+      return this.playRound();
+    }
+
+    if (this.state.playersTurn[0] !== prevState.playersTurn[0]) {
       return this.playRound();
     }
   }
@@ -56,15 +63,21 @@ class Board extends PureComponent {
   }
 
   shufflePlayers = () => {
-    const { playersTurn } = this;
-    this.playersTurn = playersTurn.slice(1).concat(playersTurn[0]);
+    const { playersTurn } = this.state;
+    const test = playersTurn.slice(1).concat(playersTurn[0])
+    console.warn('shuffle: ', test, playersTurn)
+    this.setState({
+      playersTurn: test,
+    });
   }
 
   playRound = async () => {
-    const { cards, addCardToTable } = this.props;
-    const { playersTurn } = this;
+    const {
+      cards, addCardToTable, table, numPlayers,
+    } = this.props;
+    const { playersTurn } = this.state;
 
-    if (this.props.table.length === this.props.numPlayers) {
+    if (table.length === numPlayers) {
       return this.resetRound();
     }
 
@@ -75,58 +88,26 @@ class Board extends PureComponent {
     const card = cards[playersTurn[0]][randomNumber];
     const { playerId, value, code } = card;
 
-    this.shufflePlayers();
-
-    await pause(400);
+    await pause(200);
     addCardToTable({ playerId, value, code });
   }
 
   setWinnerToPlay = (winner) => {
-    while (this.playersTurn[0] !== winner) {
-      this.shufflePlayers();
+    const { playersTurn } = this.state;
+    let tempPlayers = playersTurn;
+    while (tempPlayers[0] !== winner) {
+      tempPlayers = tempPlayers.slice(1).concat(tempPlayers[0]);
     }
+
+    this.setState({
+      playersTurn: tempPlayers,
+    });
   }
 
   resetRound = () => {
     const { playerId } = calculateRoundWinner(this.props.table);
     this.setWinnerToPlay(playerId);
     this.props.setRoundWinner(playerId);
-  }
-
-  playRounds = () => {
-    if (this.playersTurn[0] === HUMAN_PLAYER_ID) {
-      this.shufflePlayers();
-    }
-  }
-
-  renderPlayer = ({ cards, player }) => {
-    if (!cards || !cards[player]) return null;
-
-    const { center } = this.state;
-
-    return cards[player].map((card) => {
-      const props = {
-        key: card.code,
-        code: card.code,
-        alt: card.value,
-        src: card.image,
-        center,
-        value: card.value,
-        playerId: card.playerId,
-        playRounds: this.playRounds,
-        animationFinished: this.playRound,
-        blockClick: true,
-        removeCard: this.removeCard,
-      };
-
-      if ((player === HUMAN_PLAYER_ID) && (this.playersTurn[0] === HUMAN_PLAYER_ID)) {
-        props.blockClick = false;
-      }
-
-      return (
-        <Card {...props} />
-      );
-    });
   }
 
   getCenter = () => {
@@ -163,6 +144,41 @@ class Board extends PureComponent {
       this.purgatory = [];
       return this.props.flushTable();
     }
+  }
+
+
+  checkBlock = ({ player, playersTurn }) => {
+    if (player !== HUMAN_PLAYER_ID) {
+      return true;
+    }
+
+    return playersTurn[0] !== HUMAN_PLAYER_ID;
+  }
+
+  renderPlayer = ({ cards, player }) => {
+    if (!cards || !cards[player]) return null;
+
+    const { center, playersTurn } = this.state;
+
+    return cards[player].map((card) => {
+      const props = {
+        key: card.code,
+        code: card.code,
+        alt: card.value,
+        src: card.image,
+        center,
+        value: card.value,
+        playerId: card.playerId,
+        playRounds: this.playRounds,
+        animationFinished: this.shufflePlayers,
+        blockClick: this.checkBlock({ player, playersTurn }),
+        removeCard: this.removeCard,
+      };
+
+      return (
+        <Card {...props} />
+      );
+    });
   }
 
   render() {
