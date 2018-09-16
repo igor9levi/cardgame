@@ -5,6 +5,7 @@ import './Board.css';
 import Card from './Card';
 import { calculateRoundWinner } from '../../helpers/roundHelpers';
 import { pause } from '../../helpers/animationHelpers';
+import { HUMAN_PLAYER_ID } from '../App/appConstants';
 
 class Board extends PureComponent {
   static propTypes = {
@@ -30,7 +31,6 @@ class Board extends PureComponent {
     this.playersTurn = [...Array(props.numPlayers).keys()];
     this.refTable = React.createRef();
     this.purgatory = [];
-    // this.purgatory = {};
   }
 
   componentDidMount() {
@@ -68,7 +68,7 @@ class Board extends PureComponent {
       return this.resetRound();
     }
 
-    if (playersTurn[0] === 0) return; // Todo: unblock player
+    if (playersTurn[0] === HUMAN_PLAYER_ID) return; // Todo: unblock player
 
     const max = cards[playersTurn[0]].length - 1;
     const randomNumber = Random.integer(0, max)(Random.engines.nativeMath);
@@ -77,7 +77,7 @@ class Board extends PureComponent {
 
     this.shufflePlayers();
 
-    await pause(1000);
+    await pause(400);
     addCardToTable({ playerId, value, code });
   }
 
@@ -88,15 +88,13 @@ class Board extends PureComponent {
   }
 
   resetRound = () => {
-    const winnerCard = calculateRoundWinner(this.props.table);
-    const player = winnerCard.playerId;
-    this.setWinnerToPlay(player);
-    this.props.setRoundWinner(player);
+    const { playerId } = calculateRoundWinner(this.props.table);
+    this.setWinnerToPlay(playerId);
+    this.props.setRoundWinner(playerId);
   }
 
   playRounds = () => {
-    if (this.playersTurn[0] === 0) {
-      // Todo: block player
+    if (this.playersTurn[0] === HUMAN_PLAYER_ID) {
       this.shufflePlayers();
     }
   }
@@ -121,7 +119,7 @@ class Board extends PureComponent {
         removeCard: this.removeCard,
       };
 
-      if (player === 0) {
+      if ((player === HUMAN_PLAYER_ID) && (this.playersTurn[0] === HUMAN_PLAYER_ID)) {
         props.blockClick = false;
       }
 
@@ -143,6 +141,7 @@ class Board extends PureComponent {
     return center;
   }
 
+  // Todo: refactor remove cards
   removeCards = () => {}
 
   removeCard = (cardId) => {

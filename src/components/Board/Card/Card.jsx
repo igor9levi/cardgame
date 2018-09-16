@@ -39,27 +39,10 @@ class Card extends React.Component {
       centered: false,
       flush: false,
     };
-    this.flush = false;
-    // this.counter = 0;
   }
 
   componentDidUpdate(prevProps, prevState) {
-
-    // Todo: clear winner, round end refactor, block click until player turn
-    // if (this.flush) {
-    //   this.flush = false;
-    //   this.counter += 1;
-    //
-    //   setTimeout(() => {
-    //     if (this.props.table !== 0) {
-    //       if (this.counter === 1) {
-    //         this.props.removeCard(this.props.code);
-    //       }
-    //     }
-    //   }, 4000);
-    //
-    //   return;
-    // }
+    // Todo: speed up game, roundEnd refactor, block click until player turn
 
     if (this.state.flush) {
       return this.removeCard();
@@ -115,7 +98,6 @@ class Card extends React.Component {
     const { winner, center } = this.props;
     const { left = 0, top = 0 } = cardMoveDirection({ playerId: winner, left: center.centerX, top: center.centerY });
 
-    this.flush = true;
     this.setState({
       flush: true,
       styling: {
@@ -163,11 +145,11 @@ class Card extends React.Component {
   render() {
     const { alt, src } = this.props;
     const {
-      animate, styling,
+      styling,
     } = this.state;
 
     return (
-      <div className={animate} style={styling} onClick={this.handleClick} ref={this.cardRef}>
+      <div className="container" style={styling} onClick={this.handleClick} ref={this.cardRef}>
         {this.renderCard({ src, alt })}
       </div>
     );
