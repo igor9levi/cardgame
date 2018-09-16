@@ -42,7 +42,6 @@ class Board extends PureComponent {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.warn('cdu: ', this.state.playersTurn[0], prevState.playersTurn[0])
     if (this.gameEnd()) {
       return this.props.setEndStatus();
     }
@@ -64,10 +63,8 @@ class Board extends PureComponent {
 
   shufflePlayers = () => {
     const { playersTurn } = this.state;
-    const test = playersTurn.slice(1).concat(playersTurn[0])
-    console.warn('shuffle: ', test, playersTurn)
     this.setState({
-      playersTurn: test,
+      playersTurn: playersTurn.slice(1).concat(playersTurn[0]),
     });
   }
 
@@ -81,7 +78,7 @@ class Board extends PureComponent {
       return this.resetRound();
     }
 
-    if (playersTurn[0] === HUMAN_PLAYER_ID) return; // Todo: unblock player
+    if (playersTurn[0] === HUMAN_PLAYER_ID) return;
 
     const max = cards[playersTurn[0]].length - 1;
     const randomNumber = Random.integer(0, max)(Random.engines.nativeMath);
@@ -122,9 +119,6 @@ class Board extends PureComponent {
     return center;
   }
 
-  // Todo: refactor remove cards
-  removeCards = () => {}
-
   removeCard = (cardId) => {
     let inside = false;
 
@@ -147,6 +141,7 @@ class Board extends PureComponent {
   }
 
 
+  // Todo: bullet proof rapid click
   checkBlock = ({ player, playersTurn }) => {
     if (player !== HUMAN_PLAYER_ID) {
       return true;
