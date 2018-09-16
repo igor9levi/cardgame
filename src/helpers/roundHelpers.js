@@ -7,7 +7,7 @@ export const calculateRoundWinner = (table) => {
   return winnerCard;
 };
 
-export const calculateTablePosition = ({ playerId, cardHeight }) => {
+export const calculateTablePosition = ({ playerId, cardHeight = 50 }) => {
   switch (playerId) {
     case 0:
       return {

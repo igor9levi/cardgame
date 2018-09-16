@@ -44,11 +44,11 @@ class Board extends PureComponent {
       return this.props.setEndStatus();
     }
 
-    if (this.props.table.length === this.props.numPlayers) {
-      return this.resetRound();
-    }
+    // if (this.props.table.length === this.props.numPlayers) {
+    //   return this.resetRound();
+    // }
 
-    if ((this.props.table.length !== prevProps.table.length) /*&& (this.props.table.length === 0)*/) {
+    if ((this.props.table.length !== prevProps.table.length) && (this.props.table.length === 0)) {
       return this.playRound();
     }
   }
@@ -68,6 +68,10 @@ class Board extends PureComponent {
     const { cards, addCardToTable } = this.props;
     const { playersTurn } = this;
 
+    if (this.props.table.length === this.props.numPlayers) {
+      return this.resetRound();
+    }
+
     if (playersTurn[0] === 0) return; // Todo: unblock player
 
     const max = cards[playersTurn[0]].length - 1;
@@ -77,9 +81,7 @@ class Board extends PureComponent {
 
     this.shufflePlayers();
 
-    console.warn('before', code);
-    const paused = await pause(4000);
-    console.warn(paused, code);
+    await pause(1000);
     addCardToTable({ playerId, value, code });
   }
 

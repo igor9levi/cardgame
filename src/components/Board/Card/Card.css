@@ -54,7 +54,7 @@
 }
 
 .f1_container {
-    position: relative;
+    /*position: relative;*/
     width: 50px;
     height: 70px;
     z-index: 1;
