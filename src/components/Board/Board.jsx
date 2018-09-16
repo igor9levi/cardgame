@@ -44,10 +44,6 @@ class Board extends PureComponent {
       return this.props.setEndStatus();
     }
 
-    // if (this.props.table.length === this.props.numPlayers) {
-    //   return this.resetRound();
-    // }
-
     if ((this.props.table.length !== prevProps.table.length) && (this.props.table.length === 0)) {
       return this.playRound();
     }

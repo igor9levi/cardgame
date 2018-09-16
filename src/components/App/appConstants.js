@@ -6,6 +6,7 @@ export const GAME_END = 'GAME_END';
 export const GAME_RESET = 'GAME_RESET';
 export const GAME_LOADING = 'GAME_LOADING';
 export const SET_ERROR = 'SET_ERROR';
+export const HUMAN_PLAYER_ID = 0
 export const APP_STATUS = {
   WELCOME: 1,
   LOADING: 2,
