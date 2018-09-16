@@ -42,27 +42,34 @@ class Board extends PureComponent {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.gameEnd()) {
-      return this.props.setEndStatus();
+    const { cards, setEndStatus, table } = this.props;
+    const { table: oldTable } = prevProps;
+    const { playersTurn } = this.state;
+    const { playersTurn: oldPlayersTurn } = prevState;
+    if (this.gameEnd(cards)) {
+      return setEndStatus();
     }
 
-    if ((this.props.table.length !== prevProps.table.length) && (this.props.table.length === 0)) {
-      return this.playRound();
-    }
-
-    if (this.state.playersTurn[0] !== prevState.playersTurn[0]) {
+    if (this.shouldPlayRound({
+      table, oldTable, playersTurn, oldPlayersTurn,
+    })) {
       return this.playRound();
     }
   }
 
-  gameEnd = () => {
-    const { cards } = this.props;
+  shouldPlayRound = ({
+    table, oldTable, playersTurn, oldPlayersTurn,
+  }) => (((table.length !== oldTable.length) && (table.length === 0)) || playersTurn[0] !== oldPlayersTurn[0])
+
+  gameEnd = (cards) => {
     const flat = cards.reduce((acc, val) => acc.concat(val), []);
+
     return flat.length === 0;
   }
 
   shufflePlayers = () => {
     const { playersTurn } = this.state;
+
     this.setState({
       playersTurn: playersTurn.slice(1).concat(playersTurn[0]),
     });
@@ -78,7 +85,7 @@ class Board extends PureComponent {
       return this.resetRound();
     }
 
-    if (playersTurn[0] === HUMAN_PLAYER_ID) return;
+    if (playersTurn[0] === HUMAN_PLAYER_ID) return false;
 
     const max = cards[playersTurn[0]].length - 1;
     const randomNumber = Random.integer(0, max)(Random.engines.nativeMath);
@@ -86,7 +93,7 @@ class Board extends PureComponent {
     const { playerId, value, code } = card;
 
     await pause(200);
-    addCardToTable({ playerId, value, code });
+    return addCardToTable({ playerId, value, code });
   }
 
   setWinnerToPlay = (winner) => {
@@ -102,9 +109,10 @@ class Board extends PureComponent {
   }
 
   resetRound = () => {
-    const { playerId } = calculateRoundWinner(this.props.table);
+    const { table, setRoundWinner } = this.props;
+    const { playerId } = calculateRoundWinner(table);
     this.setWinnerToPlay(playerId);
-    this.props.setRoundWinner(playerId);
+    setRoundWinner(playerId);
   }
 
   getCenter = () => {
@@ -120,9 +128,10 @@ class Board extends PureComponent {
   }
 
   removeCard = (cardId) => {
+    const { cards, flushTable } = this.props;
     let inside = false;
 
-    this.props.cards.map(player => player.map((card) => {
+    cards.map(player => player.map((card) => {
       if (card.code === cardId) {
         inside = true;
       }
@@ -134,9 +143,9 @@ class Board extends PureComponent {
       this.purgatory.push(cardId);
     }
 
-    if (this.purgatory.length === this.props.cards.length) {
+    if (this.purgatory.length === cards.length) {
       this.purgatory = [];
-      return this.props.flushTable();
+      flushTable();
     }
   }
 

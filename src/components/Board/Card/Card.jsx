@@ -15,6 +15,7 @@ class Card extends React.Component {
       centerY: PropTypes.number,
     }).isRequired,
     addCardToTable: PropTypes.func.isRequired,
+    removeCard: PropTypes.func.isRequired,
     value: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
@@ -33,7 +34,6 @@ class Card extends React.Component {
 
     this.state = {
       styling: {},
-      animate: 'container',
       flip: false,
       centered: false,
       flush: false,
@@ -111,7 +111,6 @@ class Card extends React.Component {
   playNextCard = async () => {
     const { animationFinished } = this.props;
     await animation.pause(200);
-    console.warn('Human finished!')
     animationFinished();
   }
 
@@ -121,7 +120,6 @@ class Card extends React.Component {
     } = this.props;
 
     if ((playerId !== HUMAN_PLAYER_ID) || blockClick) {
-      console.warn(' BLOCKED !!!')
       return;
     }
 
