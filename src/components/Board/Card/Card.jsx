@@ -79,13 +79,13 @@ class Card extends React.Component {
     const leftPosition = center.centerX + left;
     const topPosition = center.centerY + top;
 
-    await animation.pause(200);
+    await animation.pause(300);
 
     this.setState({
       centered: true,
       styling: {
         position: 'absolute',
-        transitionDuration: '1s',
+        transitionDuration: '0.5s',
         left: leftPosition,
         top: topPosition,
       },

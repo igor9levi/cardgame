@@ -129,15 +129,15 @@ class Board extends PureComponent {
 
   removeCard = (cardId) => {
     const { cards, flushTable } = this.props;
-    let inside = false;
-
-    cards.map(player => player.map((card) => {
-      if (card.code === cardId) {
-        inside = true;
-      }
-    }));
-
-    if (!inside) return;
+    // let inside = false;
+    //
+    // cards.map(player => player.map((card) => {
+    //   if (card.code === cardId) {
+    //     inside = true;
+    //   }
+    // }));
+    //
+    // if (!inside) return;
 
     if (!(this.purgatory.includes(cardId))) {
       this.purgatory.push(cardId);
