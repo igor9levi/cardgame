@@ -4,6 +4,7 @@ import Random from 'random-js';
 import './Board.css';
 import Card from './Card';
 import { calculateRoundWinner } from '../../helpers/roundHelpers';
+import { pause } from '../../helpers/animationHelpers';
 
 class Board extends PureComponent {
   static propTypes = {
@@ -12,7 +13,7 @@ class Board extends PureComponent {
     table: PropTypes.arrayOf(PropTypes.object),
     score: PropTypes.arrayOf(PropTypes.number),
     addCardToTable: PropTypes.func.isRequired,
-    flushTable: PropTypes.func.isRequired,
+    // flushTable: PropTypes.func.isRequired,
     setEndStatus: PropTypes.func.isRequired,
   }
 
@@ -28,6 +29,8 @@ class Board extends PureComponent {
     this.state = this.initialState;
     this.playersTurn = [...Array(props.numPlayers).keys()];
     this.refTable = React.createRef();
+    this.purgatory = [];
+    // this.purgatory = {};
   }
 
   componentDidMount() {
@@ -45,7 +48,7 @@ class Board extends PureComponent {
       return this.resetRound();
     }
 
-    if (this.props.table.length !== prevProps.table.length) {
+    if ((this.props.table.length !== prevProps.table.length) /*&& (this.props.table.length === 0)*/) {
       return this.playRound();
     }
   }
@@ -61,7 +64,7 @@ class Board extends PureComponent {
     this.playersTurn = playersTurn.slice(1).concat(playersTurn[0]);
   }
 
-  playRound = () => {
+  playRound = async () => {
     const { cards, addCardToTable } = this.props;
     const { playersTurn } = this;
 
@@ -73,6 +76,10 @@ class Board extends PureComponent {
     const { playerId, value, code } = card;
 
     this.shufflePlayers();
+
+    console.warn('before', code);
+    const paused = await pause(4000);
+    console.warn(paused, code);
     addCardToTable({ playerId, value, code });
   }
 
@@ -85,8 +92,8 @@ class Board extends PureComponent {
   resetRound = () => {
     const winnerCard = calculateRoundWinner(this.props.table);
     const player = winnerCard.playerId;
-    this.props.flushTable({ player });
     this.setWinnerToPlay(player);
+    this.props.setRoundWinner(player);
   }
 
   playRounds = () => {
@@ -111,7 +118,9 @@ class Board extends PureComponent {
         value: card.value,
         playerId: card.playerId,
         playRounds: this.playRounds,
+        animationFinished: this.playRound,
         blockClick: true,
+        removeCard: this.removeCard,
       };
 
       if (player === 0) {
@@ -136,42 +145,63 @@ class Board extends PureComponent {
     return center;
   }
 
+  removeCard = (cardId) => {
+    let inside = false;
+
+    this.props.cards.map(player => player.map((card) => {
+      if (card.code === cardId) {
+        inside = true;
+      }
+    }));
+
+    if (!inside) return;
+
+    if (!(this.purgatory.includes(cardId))) {
+      this.purgatory.push(cardId);
+    }
+
+    if (this.purgatory.length === this.props.cards.length) {
+      this.purgatory = [];
+      return this.props.flushTable();
+    }
+  }
+
   render() {
     const { cards, score } = this.props;
 
     return (
       <div className="wrapper">
         <div className="player player-left">
-           <p>
+          <p>
            Score:
-           {score[1]}
-           </p>
+            {score[1]}
+          </p>
           {this.renderPlayer({ player: 1, cards })}
         </div>
         <div className="middle-row">
           <div>
-          <div className="top-row">
-             <p>
+            <div className="top-row">
+              <p>
              Score:
-             {score[2]}
-             </p>
-            {this.renderPlayer({ player: 2, cards })}
-          </div>
-          <div className="player table" ref={this.refTable} />
-          <div className="bottom-row">
-             <p>
+                {score[2]}
+              </p>
+              {this.renderPlayer({ player: 2, cards })}
+            </div>
+            <div className="player table" ref={this.refTable} />
+            <div className="bottom-row">
+              <p>
              Score:
-             {score[0]}
-             </p>
-            {this.renderPlayer({ player: 0, cards })}
-          </div>
+                {score[0]}
+              </p>
+              {this.renderPlayer({ player: 0, cards })}
+            </div>
           </div>
         </div>
         <div className="player player-right">
-           <p>
+          <p>
            Score:
-           {score[3]}
-           </p>
+            {score[3]}
+          </p>
           {this.renderPlayer({ player: 3, cards })}
         </div>
       </div>

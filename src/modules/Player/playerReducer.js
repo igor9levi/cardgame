@@ -19,12 +19,18 @@ export default (state = constants.INITIAL_STATE, action) => {
         ...state,
         table: [...state.table, action.payload],
       };
+    case constants.SET_ROUND_WINNER:
+      return {
+        ...state,
+        winner: action.payload,
+      };
     case constants.FLUSH_TABLE:
       return {
         ...state,
         cards: removeCardsFromPlayer({ cards: state.cards, table: state.table }),
         table: [],
-        score: updateScore({ player: action.payload.player, score: state.score }),
+        score: updateScore({ player: state.winner, score: state.score }),
+        winner: null,
       };
     default:
       return state;

@@ -5,7 +5,11 @@ export const addCardToTable = card => ({
   payload: card,
 });
 
-export const flushTable = player => ({
+export const flushTable = () => ({
   type: constants.FLUSH_TABLE,
+});
+
+export const setRoundWinner = player => ({
+  type: constants.SET_ROUND_WINNER,
   payload: player,
 });

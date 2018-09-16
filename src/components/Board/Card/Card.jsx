@@ -3,14 +3,17 @@ import PropTypes from 'prop-types';
 import './Card.css';
 import { calculateTablePosition, cardMoveDirection } from '../../../helpers/roundHelpers';
 import back from '../../../img/hoyleback.jpg';
+import { pause } from '../../../helpers/animationHelpers';
 
 class Card extends React.Component {
   static propTypes = {
     playerId: PropTypes.number.isRequired,
+    winner: PropTypes.number,
     center: PropTypes.object.isRequired,
     addCardToTable: PropTypes.func.isRequired,
     value: PropTypes.string.isRequired,
     playRounds: PropTypes.func.isRequired,
+    // flushTable: PropTypes.func,
     alt: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
     code: PropTypes.string.isRequired,
@@ -27,21 +30,58 @@ class Card extends React.Component {
       styling: {},
       height: 50,
       displayBack: props.playerId !== 0,
+      cardImageStyle: 'f1_card',
+      animate: 'f1_container',
+      flip: false,
+      // flush: false,
     };
+    this.flush = false;
+    this.counter = 0;
   }
 
   componentDidUpdate(prevProps) {
+    // if (this.state.flush === false && prevState.flush === true) return;
+
+    if (this.flush) {
+      this.flush = false;
+      this.counter += 1;
+
+      console.warn('removing card...', this.props.code);
+      setTimeout(() => {
+        if (this.props.table !== 0) {
+          if (this.counter === 1) {
+            this.props.removeCard(this.props.code);
+          }
+        }
+      }, 4000);
+
+      return;
+    }
+
+    if (this.shouldRotateCard({ old: prevProps, current: this.props })) {
+      console.warn('componentDidUpdate: rotating card...', this.props.code);
+      return this.rotateCard();
+    }
+
     if (this.shouldAnimateCard({ old: prevProps, current: this.props })) {
-      setTimeout(() => this.animateCard, 2000);
-      // this.animateCard();
+      console.warn('componentDidUpdate: animating card...', this.props.code);
+      return this.startAnimateCard();
     }
 
     if (this.shouldAnimateOff({ old: prevProps, current: this.props })) {
-      this.animateCardOff();
+      console.log('animate OFF...', this.props.code);
+      return this.animateCardOff();
     }
   }
 
   shouldAnimateCard = ({ old, current }) => {
+    const { flip: oldFlip } = old;
+    const { flip: newFlip } = current;
+
+    return ((oldFlip !== newFlip) && (newFlip === true));
+  }
+
+  shouldRotateCard = ({ old, current }) => {
     const { table: oldTable } = old;
     const { table: newTable, code } = current;
     const codeInOldTable = oldTable.map(card => card.code).includes(code);
@@ -51,13 +91,26 @@ class Card extends React.Component {
   }
 
   shouldAnimateOff = ({ old, current }) => {
-    const { table: oldTable } = old;
-    const { table: newTable, code } = current;
-    const codeInOldTable = oldTable.map(card => card.code).includes(code);
-    const isNewTableEmpty = newTable.length === 0;
+    const { winner, table, code } = current;
+    const cardIsInTable = table.map(card => card.code).includes(code);
+    const result = cardIsInTable && (winner !== null) && (table.length > 0) && !this.flush;
 
-    return isNewTableEmpty && codeInOldTable;
+    // console.warn(result, this.props.flushTable);
+    return result;
+    // const { table: oldTable } = old;
+    // const { table: newTable, code } = current;
+    // const codeInOldTable = oldTable.map(card => card.code).includes(code);
+    // const isNewTableEmpty = newTable.length === 0;
+    //
+    // return isNewTableEmpty && codeInOldTable;
   }
+
+  startAnimateCard = async () => {
+    await pause(1000);
+    this.animateCard();
+  }
+
+  rotateCard = () => this.setState({ flip: true })
 
   animateCard = () => {
     const { center, playerId } = this.props;
@@ -65,26 +118,35 @@ class Card extends React.Component {
     const { top, left } = calculateTablePosition({ playerId, cardHeight });
     const direction = cardMoveDirection({ playerId });
 
-    if (playerId !== 0) {
-      this.flipCard();
-    }
+    // if (playerId !== 0) {
+    //   this.flipCard();
+    // }
 
-    this.setState({
-      displayBack: false,
-      // cardStatus: `player-card ${direction}-center`,
-      // styling: {
-      //   position: 'absolute',
-      //   left: center.centerX + left,
-      //   top: center.centerY + top,
-      //   zIndex: 1000,
-      // },
-    });
+    console.warn('animateCard: animating card.. ', this.props.code, playerId);
+    // this.setState({
+    // displayBack: false,
+    // cardImageStyle: 'show-face',
+    // flip: true,
+    // animate: `f1_container ${direction}-center`,
+    // cardStatus: `player-card ${direction}-center`,
+    // styling: {
+    //   position: 'absolute',
+    //   left: center.centerX + left,
+    //   top: center.centerY + top,
+    //   zIndex: 1000,
+    // },
+    // });
   }
 
   // Todo: animate off towards the round winner
   animateCardOff = () => {
+    const { winner } = this.props;
+    const direction = cardMoveDirection({ playerId: winner });
+    console.warn('animating off ', direction);
+    this.flush = true;
     this.setState({
       // cardStatus: 'player-card animate',
+      // flush: true,
       styling: {
         left: 400,
         top: 100,
@@ -92,11 +154,11 @@ class Card extends React.Component {
     });
   }
 
-  flipCard = () => {
-    this.setState({
-      displayBack: false,
-    });
-  }
+  // flipCard = () => {
+  //   this.setState({
+  //     displayBack: false,
+  //   });
+  // }
 
   handleClick = () => {
     const {
@@ -107,15 +169,13 @@ class Card extends React.Component {
       return;
     }
 
-    setTimeout(() => {
-      playRounds();
-      addCardToTable({ playerId, value, code });
-    }, 2000);
+    playRounds();
+    addCardToTable({ playerId, value, code });
   }
 
   isHumanPlayer = () => this.props.playerId === 0;
 
-  renderCard = ({ src, alt }) => {
+  renderCardOld = ({ src, alt }) => {
     if (this.isHumanPlayer()) {
       return (
         <div className="front face">
@@ -128,7 +188,7 @@ class Card extends React.Component {
       );
     }
     return (
-      <div className="f1_card">
+      <div className={this.state.cardImageStyle}>
         <div className="front face">
           <img
             src={back}
@@ -145,6 +205,35 @@ class Card extends React.Component {
         </div>
       </div>
     );
+  }
+
+  renderCard = ({ src, alt }) => {
+    if (this.isHumanPlayer()) {
+      return (
+        <div className="front face">
+          <img
+            src={src}
+            alt={alt}
+            className="card-front img"
+          />
+        </div>
+      );
+    }
+    return this.state.flip
+      ? (
+        <img
+          src={src}
+          alt={alt}
+          className="img"
+        />
+      )
+      : (
+        <img
+          src={back}
+          alt="back of card"
+          className="img"
+        />
+      );
   }
 
   render() {
@@ -177,7 +266,7 @@ class Card extends React.Component {
     // );
 
     return (
-      <div className="f1_container" onClick={this.handleClick}>
+      <div className={this.state.animate} onClick={this.handleClick} ref={this.cardRef}>
         {this.renderCard({ src, alt })}
       </div>
     );

@@ -7,4 +7,5 @@ export const INITIAL_STATE = {
   cards: [],
   score: [],
   table: [],
+  winner: null,
 };
