@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import Random from 'random-js';
 import './Board.css';
 import Card from './Card';
-import { calculateRoundWinner } from '../../helpers/roundHelpers';
+import {
+  calculateRoundWinner, checkBlock, gameEnd, getCenter, shouldPlayRound,
+} from '../../helpers/roundHelpers';
 import { pause } from '../../helpers/animationHelpers';
 import { HUMAN_PLAYER_ID } from '../App/appConstants';
 
@@ -37,7 +39,7 @@ class Board extends PureComponent {
 
   componentDidMount() {
     this.setState({
-      center: this.getCenter(),
+      center: getCenter(this.refTable.current),
     });
   }
 
@@ -46,26 +48,18 @@ class Board extends PureComponent {
     const { table: oldTable } = prevProps;
     const { playersTurn } = this.state;
     const { playersTurn: oldPlayersTurn } = prevState;
-    if (this.gameEnd(cards)) {
+
+    if (gameEnd(cards)) {
       return setEndStatus();
     }
 
-    if (this.shouldPlayRound({
+    if (shouldPlayRound({
       table, oldTable, playersTurn, oldPlayersTurn,
     })) {
       return this.playRound();
     }
   }
 
-  shouldPlayRound = ({
-    table, oldTable, playersTurn, oldPlayersTurn,
-  }) => (((table.length !== oldTable.length) && (table.length === 0)) || playersTurn[0] !== oldPlayersTurn[0])
-
-  gameEnd = (cards) => {
-    const flat = cards.reduce((acc, val) => acc.concat(val), []);
-
-    return flat.length === 0;
-  }
 
   shufflePlayers = () => {
     const { playersTurn } = this.state;
@@ -111,33 +105,14 @@ class Board extends PureComponent {
   resetRound = () => {
     const { table, setRoundWinner } = this.props;
     const { playerId } = calculateRoundWinner(table);
+
     this.setWinnerToPlay(playerId);
     setRoundWinner(playerId);
   }
 
-  getCenter = () => {
-    const node = this.refTable.current;
-    const centerX = node.offsetLeft + node.offsetWidth / 2;
-    const centerY = node.offsetTop + node.offsetHeight / 2;
-    const center = {
-      centerX,
-      centerY,
-    };
-
-    return center;
-  }
 
   removeCard = (cardId) => {
     const { cards, flushTable } = this.props;
-    // let inside = false;
-    //
-    // cards.map(player => player.map((card) => {
-    //   if (card.code === cardId) {
-    //     inside = true;
-    //   }
-    // }));
-    //
-    // if (!inside) return;
 
     if (!(this.purgatory.includes(cardId))) {
       this.purgatory.push(cardId);
@@ -147,16 +122,6 @@ class Board extends PureComponent {
       this.purgatory = [];
       flushTable();
     }
-  }
-
-
-  // Todo: bullet proof rapid click
-  checkBlock = ({ player, playersTurn }) => {
-    if (player !== HUMAN_PLAYER_ID) {
-      return true;
-    }
-
-    return playersTurn[0] !== HUMAN_PLAYER_ID;
   }
 
   renderPlayer = ({ cards, player }) => {
@@ -175,7 +140,7 @@ class Board extends PureComponent {
         playerId: card.playerId,
         playRounds: this.playRounds,
         animationFinished: this.shufflePlayers,
-        blockClick: this.checkBlock({ player, playersTurn }),
+        blockClick: checkBlock({ player, playersTurn }),
         removeCard: this.removeCard,
       };
 

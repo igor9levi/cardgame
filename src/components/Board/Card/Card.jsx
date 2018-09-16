@@ -41,9 +41,9 @@ class Card extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    // Todo: speed up game, roundEnd refactor, block click until player turn
+    const { flush } = this.state;
 
-    if (this.state.flush) {
+    if (flush) {
       return this.removeCard();
     }
 
@@ -65,8 +65,9 @@ class Card extends React.Component {
   }
 
   removeCard = async () => {
+    const { removeCard, code } = this.props;
     await animation.pause(200);
-    return this.props.removeCard(this.props.code);
+    return removeCard(code);
   }
 
   rotateCard = () => this.setState({ flip: true })
@@ -92,7 +93,6 @@ class Card extends React.Component {
     });
   }
 
-  // Todo: animate off towards the round winner
   animateCardOff = () => {
     const { winner, center } = this.props;
     const { left = 0, top = 0 } = cardMoveDirection({ playerId: winner, left: center.centerX, top: center.centerY });

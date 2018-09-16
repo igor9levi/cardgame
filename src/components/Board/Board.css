@@ -28,14 +28,11 @@
 
 .player-left {
     flex: 1;
-    /*display: flex;*/
     flex-direction: column;
 }
 
 .player-right {
     flex: 1;
-    /*display: flex;*/
-    /*flex-direction: column;*/
 }
 
 .bottom-row {
