@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import ScoreBoardComponent from './ScoreBoard';
 import { setWelcomeStatus } from '../App/appActions';
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   score: state.player.score,
 });
 

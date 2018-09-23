@@ -73,7 +73,7 @@ class Board extends PureComponent {
 
   playRound = async () => {
     const {
-      cards, addCardToTable, table, numPlayers,
+      cards, addCardToTable, table, numPlayers, unblockClick
     } = this.props;
     const { playersTurn } = this.state;
 
@@ -82,7 +82,7 @@ class Board extends PureComponent {
     }
 
     if (playersTurn[0] === HUMAN_PLAYER_ID) {
-      this.props.unblockClick();
+      unblockClick();
       return false;
     }
 
