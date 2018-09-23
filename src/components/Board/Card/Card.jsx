@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Card.css';
 import { calculateTablePosition, cardMoveDirection } from '../../../helpers/roundHelpers';
-import BACK from '../../../img/hoyleback.jpg';
+import BACK from '../../../img/hoyleback1.jpg';
 import * as animation from '../../../helpers/animationHelpers';
 import { HUMAN_PLAYER_ID } from '../../App/appConstants';
 
