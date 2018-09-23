@@ -1,7 +1,9 @@
 import { connect } from 'react-redux';
 import BoardComponent from './Board';
 import { getCards } from '../../modules/Player/playerSelectors';
-import { addCardToTable, flushTable, setRoundWinner } from '../../modules/Player/playerActions';
+import {
+  addCardToTable, flushTable, setRoundWinner, unblockClick,
+} from '../../modules/Player/playerActions';
 import { setEndStatus } from '../App/appActions';
 
 export const mapStateToProps = state => ({
@@ -12,5 +14,5 @@ export const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, {
-  addCardToTable, setRoundWinner, setEndStatus, flushTable,
+  addCardToTable, setRoundWinner, setEndStatus, flushTable, unblockClick,
 })(BoardComponent);

@@ -90,8 +90,6 @@ export const getCenter = (node) => {
   return center;
 };
 
-
-// Todo: bullet proof rapid click
 export const checkBlock = ({ player, playersTurn }) => {
   if (player !== HUMAN_PLAYER_ID) {
     return true;

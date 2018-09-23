@@ -4,7 +4,7 @@ import Random from 'random-js';
 import './Board.css';
 import Card from './Card';
 import {
-  calculateRoundWinner, checkBlock, gameEnd, getCenter, shouldPlayRound,
+  calculateRoundWinner, gameEnd, getCenter, shouldPlayRound,
 } from '../../helpers/roundHelpers';
 import { pause } from '../../helpers/animationHelpers';
 import { HUMAN_PLAYER_ID } from '../App/appConstants';
@@ -19,6 +19,7 @@ class Board extends PureComponent {
     flushTable: PropTypes.func.isRequired,
     setEndStatus: PropTypes.func.isRequired,
     setRoundWinner: PropTypes.func.isRequired,
+    unblockClick: PropTypes.func.isRequired,
   }
 
   static defaultProps = {
@@ -80,7 +81,10 @@ class Board extends PureComponent {
       return this.resetRound();
     }
 
-    if (playersTurn[0] === HUMAN_PLAYER_ID) return false;
+    if (playersTurn[0] === HUMAN_PLAYER_ID) {
+      this.props.unblockClick();
+      return false;
+    }
 
     const max = cards[playersTurn[0]].length - 1;
     const randomNumber = Random.integer(0, max)(Random.engines.nativeMath);
@@ -128,7 +132,7 @@ class Board extends PureComponent {
   renderPlayer = ({ cards, player }) => {
     if (!cards || !cards[player]) return null;
 
-    const { center, playersTurn } = this.state;
+    const { center } = this.state;
 
     return cards[player].map((card) => {
       const props = {
@@ -141,7 +145,6 @@ class Board extends PureComponent {
         playerId: card.playerId,
         playRounds: this.playRounds,
         animationFinished: this.shufflePlayers,
-        blockClick: checkBlock({ player, playersTurn }),
         removeCard: this.removeCard,
       };
 

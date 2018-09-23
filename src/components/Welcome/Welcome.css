@@ -1,3 +1,7 @@
+.welcome-container {
+    padding: 20px;
+}
+
 .welcome-message {
     color: #fff;
 }

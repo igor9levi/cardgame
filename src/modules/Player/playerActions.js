@@ -13,3 +13,11 @@ export const setRoundWinner = player => ({
   type: constants.SET_ROUND_WINNER,
   payload: player,
 });
+
+export const blockClick = () => ({
+  type: constants.BLOCK_CLICK,
+});
+
+export const unblockClick = () => ({
+  type: constants.UNBLOCK_CLICK,
+});

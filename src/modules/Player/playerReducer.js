@@ -24,6 +24,16 @@ export default (state = constants.INITIAL_STATE, action) => {
         ...state,
         winner: action.payload,
       };
+    case constants.BLOCK_CLICK:
+      return {
+        ...state,
+        block: true,
+      };
+    case constants.UNBLOCK_CLICK:
+      return {
+        ...state,
+        block: false,
+      };
     case constants.FLUSH_TABLE:
       return {
         ...state,

@@ -20,7 +20,8 @@ class Card extends React.Component {
     alt: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
     code: PropTypes.string.isRequired,
-    blockClick: PropTypes.bool.isRequired,
+    blockClick: PropTypes.func.isRequired,
+    block: PropTypes.bool.isRequired,
   }
 
   static defaultProps = {
@@ -116,13 +117,14 @@ class Card extends React.Component {
 
   handleClick = () => {
     const {
-      playerId, addCardToTable, value, code, blockClick,
+      playerId, addCardToTable, value, code, block,
     } = this.props;
 
-    if ((playerId !== HUMAN_PLAYER_ID) || blockClick) {
+    if ((playerId !== HUMAN_PLAYER_ID) || block) {
       return;
     }
 
+    this.props.blockClick();
     addCardToTable({ playerId, value, code });
   }
 
