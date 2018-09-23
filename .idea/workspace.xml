@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1654559210">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.10" value="17" />
+          <entry key="project.open.time.11" value="13" />
+          <entry key="project.open.time.12" value="6" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.14" value="6" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="62" />
+          <entry key="project.open.time.9" value="55" />
+          <entry key="project.opened" value="167" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="14" />
+          <entry key="eslintrc" value="2" />
+          <entry key="html" value="1" />
+          <entry key="js" value="210" />
+          <entry key="json" value="4" />
+          <entry key="jsx" value="3" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="14" />
+          <entry key="HTML" value="1" />
+          <entry key="JSON" value="6" />
+          <entry key="JSX Harmony" value="3" />
+          <entry key="JavaScript" value="210" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="165" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="1471" />
+          <entry key="eslintrc" value="25" />
+          <entry key="js" value="23412" />
+          <entry key="json" value="89" />
+          <entry key="jsx" value="7040" />
+          <entry key="txt" value="546" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="1471" />
+          <entry key="JSON" value="114" />
+          <entry key="JSX Harmony" value="7040" />
+          <entry key="JavaScript" value="23412" />
+          <entry key="PLAIN_TEXT" value="546" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="7" />
+          <entry key="git.branch.create.new" value="3" />
+          <entry key="git.branch.merge" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1678">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#365#649#0" />
+                <element signature="e#369#460#0" />
+                <element signature="e#370#459#0" />
+                <element signature="e#462#553#0" />
+                <element signature="e#463#552#0" />
+                <element signature="e#555#646#0" />
+                <element signature="e#556#645#0" />
+                <element signature="e#898#929#0" />
+                <element signature="e#1010#1170#0" />
+                <element signature="e#1046#1164#0" />
+                <element signature="e#1210#2184#0" />
+                <element signature="e#1251#1470#0" />
+                <element signature="e#1537#1759#0" />
+                <element signature="e#1820#2178#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helpers/roundHelpers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="87" column="3" selection-start-line="84" selection-start-column="17" selection-end-line="87" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helpers/animationHelpers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>loop</find>
+      <find>.log</find>
+      <find>Todo</find>
+      <find>round</find>
+      <find>initial</find>
+      <find>rotatin</find>
+      <find>resetRound</find>
+      <find>flushTable</find>
+      <find>pau</find>
+      <find>pause</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feat/transition-group" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/Welcome/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Welcome/WelcomeContainer.js" />
+        <option value="$PROJECT_DIR$/src/modules/Players/playersConstants.js" />
+        <option value="$PROJECT_DIR$/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/components/App/appSelectors.js" />
+        <option value="$PROJECT_DIR$/src/components/App/index.js" />
+        <option value="$PROJECT_DIR$/src/modules/Player/playerSelectors.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/index.js" />
+        <option value="$PROJECT_DIR$/src/components/App/App.js" />
+        <option value="$PROJECT_DIR$/src/components/App/App.css" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainter.js" />
+        <option value="$PROJECT_DIR$/src/components/ScoreBoard/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js" />
+        <option value="$PROJECT_DIR$/src/store/store.js" />
+        <option value="$PROJECT_DIR$/src/components/App/appActions.js" />
+        <option value="$PROJECT_DIR$/src/components/Error/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/App/appReducer.js" />
+        <option value="$PROJECT_DIR$/src/modules/api/ApiProvider.js" />
+        <option value="$PROJECT_DIR$/.eslintrc" />
+        <option value="$PROJECT_DIR$/src/components/Error/Error.js" />
+        <option value="$PROJECT_DIR$/src/setupTests.js" />
+        <option value="$PROJECT_DIR$/src/components/App/__tests__/App.test.js" />
+        <option value="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" />
+        <option value="$PROJECT_DIR$/src/components/App/AppContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/__tests__/BoardContainer.test.js" />
+        <option value="$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js" />
+        <option value="$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/Welcome/Welcome.js" />
+        <option value="$PROJECT_DIR$/src/components/Welcome/__tests__/Welcome.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Board.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/Card.js" />
+        <option value="$PROJECT_DIR$/src/modules/Player/playerActions.js" />
+        <option value="$PROJECT_DIR$/src/modules/Player/playerConstants.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" />
+        <option value="$PROJECT_DIR$/src/modules/Player/playerReducer.js" />
+        <option value="$PROJECT_DIR$/src/components/App/appConstants.js" />
+        <option value="$PROJECT_DIR$/src/helpers/animationHelpers.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Board/Board.css" />
+        <option value="$PROJECT_DIR$/src/helpers/roundHelpers.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/Card.css" />
+        <option value="$PROJECT_DIR$/src/components/Board/BoardContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Board.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Board" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Board" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Board" type="462c0819:PsiDirectoryNode" />
+              <item name="Card" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Welcome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Welcome" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Player" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\Hp EliteBook 840 G3\Documents\Holovo\project\cardgame\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="C:\Users\Hp EliteBook 840 G3\Documents\Holovo\project\cardgame\node_modules\eslint" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hp EliteBook 840 G3\Documents\Holovo\project\cardgame\src" />
+      <recent name="C:\Users\Hp EliteBook 840 G3\Documents\Holovo\project\cardgame" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="" />
+      <created>1535251697835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535251697835</updated>
+      <workItem from="1535251701241" duration="82000" />
+      <workItem from="1536088639780" duration="183000" />
+      <workItem from="1536088860772" duration="861000" />
+      <workItem from="1536089761744" duration="706000" />
+      <workItem from="1536090506293" duration="1164000" />
+      <workItem from="1536091723424" duration="746000" />
+      <workItem from="1536092488720" duration="885000" />
+      <workItem from="1536093726746" duration="888000" />
+      <workItem from="1536094954380" duration="1037000" />
+      <workItem from="1536096467596" duration="924000" />
+      <workItem from="1536097677450" duration="1135000" />
+      <workItem from="1536098890812" duration="977000" />
+      <workItem from="1536100106878" duration="1129000" />
+      <workItem from="1536101319967" duration="1117000" />
+      <workItem from="1536102540601" duration="1095000" />
+      <workItem from="1536103760895" duration="1094000" />
+      <workItem from="1536104971677" duration="1169000" />
+      <workItem from="1536106195556" duration="1150000" />
+      <workItem from="1536107411220" duration="1166000" />
+      <workItem from="1536108632272" duration="1184000" />
+      <workItem from="1536109852549" duration="1188000" />
+      <workItem from="1536111066732" duration="1177000" />
+      <workItem from="1536112293601" duration="1170000" />
+      <workItem from="1536113503153" duration="1177000" />
+      <workItem from="1536114720529" duration="1177000" />
+      <workItem from="1536115934066" duration="1172000" />
+      <workItem from="1536117151374" duration="1115000" />
+      <workItem from="1536118366143" duration="1112000" />
+      <workItem from="1536119692324" duration="422000" />
+      <workItem from="1536148040422" duration="1162000" />
+      <workItem from="1536149252670" duration="1001000" />
+      <workItem from="1536150654171" duration="1062000" />
+      <workItem from="1536151949568" duration="1160000" />
+      <workItem from="1536153165574" duration="1117000" />
+      <workItem from="1536154374202" duration="540000" />
+      <workItem from="1536165327161" duration="639000" />
+      <workItem from="1536166537454" duration="1015000" />
+      <workItem from="1536198748919" duration="951000" />
+      <workItem from="1536200071621" duration="661000" />
+      <workItem from="1536202639180" duration="1030000" />
+      <workItem from="1536203851882" duration="1174000" />
+      <workItem from="1536205069395" duration="925000" />
+      <workItem from="1536206316052" duration="704000" />
+      <workItem from="1536207535553" duration="680000" />
+      <workItem from="1536208850468" duration="1183000" />
+      <workItem from="1536245567728" duration="591000" />
+      <workItem from="1536246801163" duration="854000" />
+      <workItem from="1536248010798" duration="1150000" />
+      <workItem from="1536249228460" duration="1073000" />
+      <workItem from="1536250438014" duration="879000" />
+      <workItem from="1536259450585" duration="1152000" />
+      <workItem from="1536260671799" duration="1079000" />
+      <workItem from="1536261958863" duration="1177000" />
+      <workItem from="1536263186034" duration="1116000" />
+      <workItem from="1536264396146" duration="664000" />
+      <workItem from="1536265611885" duration="1000000" />
+      <workItem from="1536266820598" duration="1180000" />
+      <workItem from="1536268067645" duration="1076000" />
+      <workItem from="1536269299658" duration="1070000" />
+      <workItem from="1536270620404" duration="1052000" />
+      <workItem from="1536271827485" duration="1089000" />
+      <workItem from="1536273043379" duration="807000" />
+      <workItem from="1536274378264" duration="1136000" />
+      <workItem from="1536275592232" duration="1124000" />
+      <workItem from="1536276800879" duration="1088000" />
+      <workItem from="1536278025818" duration="1100000" />
+      <workItem from="1536279237499" duration="1136000" />
+      <workItem from="1536280447716" duration="1189000" />
+      <workItem from="1536281664226" duration="1057000" />
+      <workItem from="1536282883372" duration="1170000" />
+      <workItem from="1536284190710" duration="1155000" />
+      <workItem from="1536285392106" duration="969000" />
+      <workItem from="1536286605270" duration="1169000" />
+      <workItem from="1536287872714" duration="961000" />
+      <workItem from="1536289086280" duration="1061000" />
+      <workItem from="1536290303473" duration="1115000" />
+      <workItem from="1536291525806" duration="689000" />
+      <workItem from="1536425783519" duration="812000" />
+      <workItem from="1536443786165" duration="1182000" />
+      <workItem from="1536445006483" duration="961000" />
+      <workItem from="1536446292123" duration="1175000" />
+      <workItem from="1536447505267" duration="652000" />
+      <workItem from="1536448811619" duration="1172000" />
+      <workItem from="1536450019540" duration="1081000" />
+      <workItem from="1536451233304" duration="1068000" />
+      <workItem from="1536452449400" duration="1182000" />
+      <workItem from="1536453664899" duration="1152000" />
+      <workItem from="1536454880270" duration="1169000" />
+      <workItem from="1536456089214" duration="1169000" />
+      <workItem from="1536457305061" duration="1173000" />
+      <workItem from="1536458513382" duration="1172000" />
+      <workItem from="1536459766608" duration="283000" />
+      <workItem from="1536526575404" duration="638000" />
+      <workItem from="1536528183952" duration="1033000" />
+      <workItem from="1536529717034" duration="1149000" />
+      <workItem from="1536530942178" duration="1113000" />
+      <workItem from="1536532152079" duration="749000" />
+      <workItem from="1536533421866" duration="1071000" />
+      <workItem from="1536534644601" duration="655000" />
+      <workItem from="1536535868082" duration="976000" />
+      <workItem from="1536537080910" duration="1015000" />
+      <workItem from="1536538336215" duration="1066000" />
+      <workItem from="1536539588637" duration="92000" />
+      <workItem from="1536605512186" duration="815000" />
+      <workItem from="1536610272150" duration="478000" />
+      <workItem from="1536611738218" duration="930000" />
+      <workItem from="1536612942295" duration="1079000" />
+      <workItem from="1536614154910" duration="726000" />
+      <workItem from="1536616228457" duration="858000" />
+      <workItem from="1536797683146" duration="1072000" />
+      <workItem from="1536799261196" duration="324000" />
+      <workItem from="1536867634701" duration="822000" />
+      <workItem from="1536869501001" duration="931000" />
+      <workItem from="1536870714731" duration="969000" />
+      <workItem from="1536871924959" duration="805000" />
+      <workItem from="1536873318340" duration="1092000" />
+      <workItem from="1536874527353" duration="635000" />
+      <workItem from="1536876419270" duration="940000" />
+      <workItem from="1536877890016" duration="992000" />
+      <workItem from="1536879233063" duration="1144000" />
+      <workItem from="1536880741016" duration="1162000" />
+      <workItem from="1536881950858" duration="963000" />
+      <workItem from="1536883166178" duration="1182000" />
+      <workItem from="1536884403733" duration="1185000" />
+      <workItem from="1536885618792" duration="1189000" />
+      <workItem from="1536886837582" duration="1098000" />
+      <workItem from="1536888044312" duration="990000" />
+      <workItem from="1536889260500" duration="1171000" />
+      <workItem from="1536890476184" duration="984000" />
+      <workItem from="1537061597463" duration="1009000" />
+      <workItem from="1537062811776" duration="1084000" />
+      <workItem from="1537106534240" duration="981000" />
+      <workItem from="1537107747762" duration="1126000" />
+      <workItem from="1537108957349" duration="888000" />
+      <workItem from="1537110540268" duration="1169000" />
+      <workItem from="1537111751569" duration="1173000" />
+      <workItem from="1537113033162" duration="930000" />
+      <workItem from="1537114552217" duration="1119000" />
+      <workItem from="1537115769154" duration="1190000" />
+      <workItem from="1537117012453" duration="981000" />
+      <workItem from="1537118227656" duration="878000" />
+      <workItem from="1537119485280" duration="1184000" />
+      <workItem from="1537120698573" duration="1075000" />
+      <workItem from="1537121906152" duration="909000" />
+      <workItem from="1537123638325" duration="1147000" />
+      <workItem from="1537124917586" duration="1104000" />
+      <workItem from="1537127108396" duration="1179000" />
+      <workItem from="1537128335566" duration="1184000" />
+      <workItem from="1537129547656" duration="1163000" />
+      <workItem from="1537130759875" duration="1142000" />
+      <workItem from="1537131970008" duration="940000" />
+      <workItem from="1537133186919" duration="1158000" />
+      <workItem from="1537134409957" duration="980000" />
+      <workItem from="1537135622024" duration="1157000" />
+      <workItem from="1537136835188" duration="1129000" />
+      <workItem from="1537138043614" duration="1161000" />
+      <workItem from="1537139259695" duration="990000" />
+      <workItem from="1537140617536" duration="358000" />
+      <workItem from="1537654676306" duration="727000" />
+      <workItem from="1537707727840" duration="586000" />
+      <workItem from="1537708940945" duration="630000" />
+      <workItem from="1537710145701" duration="1150000" />
+      <workItem from="1537711356179" duration="996000" />
+      <workItem from="1537712570716" duration="1142000" />
+      <workItem from="1537713779093" duration="1166000" />
+      <workItem from="1537714990981" duration="717000" />
+      <workItem from="1537716203489" duration="1035000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
+      <created>1536090772834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536090772834</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix(lint errors): 2 space erro">
+      <created>1536094194598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536094194598</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix(lint errors): 2 space erro">
+      <created>1536094566404</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536094566404</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: create apiProvider">
+      <created>1536101696184</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536101696184</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: get cards">
+      <created>1536110504082</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536110504082</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: create scoreBoard component and game status">
+      <created>1536112845618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536112845618</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: show players cards on board">
+      <created>1536117820635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536117820635</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: show cards in order">
+      <created>1536204909089</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1536204909091</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: play cards to center">
+      <created>1536205720740</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1536205720740</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: add full automated round">
+      <created>1536281708204</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1536281708204</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: calculate winner">
+      <created>1536287705006</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536287705007</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: add finish screen">
+      <created>1536288822953</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1536288822953</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: add block player prop">
+      <created>1536289934789</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536289934789</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: show score on board">
+      <created>1536290570312</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1536290570312</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: add setError action">
+      <created>1536291305645</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1536291305645</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: create error component">
+      <created>1536291998944</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1536291998944</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: create error component">
+      <created>1536292057859</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1536292057859</updated>
+    </task>
+    <task id="LOCAL-00018" summary="test: player module">
+      <created>1536456500970</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536456500970</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: add aphrodite">
+      <created>1536533674856</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1536533674857</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: add react-move">
+      <created>1536538812932</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1536538812932</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: expand">
+      <created>1536613921481</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1536613921481</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: align cards on board">
+      <created>1536878109294</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536878109294</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: align cards on board">
+      <created>1536881290914</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536881290914</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat: flip card">
+      <created>1537110982865</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1537110982866</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat: animate play &amp; win">
+      <created>1537122288099</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1537122288099</updated>
+    </task>
+    <task id="LOCAL-00026" summary="refactor: animateOff">
+      <created>1537129069278</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1537129069278</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor: flush to state, humanPlayerId">
+      <created>1537130589773</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1537130589773</updated>
+    </task>
+    <task id="LOCAL-00028" summary="refactor: remove logs">
+      <created>1537136256022</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1537136256022</updated>
+    </task>
+    <task id="LOCAL-00029" summary="refactor: remove logs">
+      <created>1537137745405</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1537137745406</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refactor: remove logs">
+      <created>1537138249349</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1537138249349</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactor: remove logs">
+      <created>1537139732494</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1537139732494</updated>
+    </task>
+    <task id="LOCAL-00032" summary="refactor: remove logs">
+      <created>1537140196422</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1537140196422</updated>
+    </task>
+    <task id="LOCAL-00033" summary="refactor: remove logs">
+      <created>1537140865786</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1537140865786</updated>
+    </task>
+    <task id="LOCAL-00034" summary="test: Board.js">
+      <created>1537717027034</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1537717027034</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="164667000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26308724" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3287858" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3287858" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Terminal" order="3" visible="true" weight="0.2557047" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25100672" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3287858" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3287858" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Terminal" order="3" weight="0.1885906" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: create apiProvider" />
+    <MESSAGE value="feat: get cards" />
+    <MESSAGE value="feat: create scoreBoard component and game status" />
+    <MESSAGE value="feat: show players cards on board" />
+    <MESSAGE value="feat: show cards in order" />
+    <MESSAGE value="feat: play cards to center" />
+    <MESSAGE value="feat: add full automated round" />
+    <MESSAGE value="feat: calculate winner" />
+    <MESSAGE value="feat: add finish screen" />
+    <MESSAGE value="feat: add block player prop" />
+    <MESSAGE value="feat: add score to board" />
+    <MESSAGE value="feat: show score on board" />
+    <MESSAGE value="feat: add setError action" />
+    <MESSAGE value="feat: create error component" />
+    <MESSAGE value="test: player module" />
+    <MESSAGE value="feat: add aphrodite" />
+    <MESSAGE value="feat: add react-move" />
+    <MESSAGE value="feat: expand" />
+    <MESSAGE value="feat: align cards on board" />
+    <MESSAGE value="feat: flip card" />
+    <MESSAGE value="feat: animate play &amp; win" />
+    <MESSAGE value="refactor: animateOff" />
+    <MESSAGE value="refactor: flush to state, humanPlayerId" />
+    <MESSAGE value="refactor: remove logs" />
+    <MESSAGE value="test: Board.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: Board.js" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/Welcome/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/holovo game algoritam.txt" />
+    <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Welcome/WelcomeContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Error/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Error/ErrorContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/ApiProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/lcov-report/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Error/Error.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/appSelectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerSelectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Welcome/Welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Welcome/__tests__/Welcome.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/appReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerConstants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/CardContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/appConstants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/AppContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/BoardContainer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/BoardContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/roundHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="87" column="3" selection-start-line="84" selection-start-column="17" selection-end-line="87" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/animationHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1678">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#365#649#0" />
+            <element signature="e#369#460#0" />
+            <element signature="e#370#459#0" />
+            <element signature="e#462#553#0" />
+            <element signature="e#463#552#0" />
+            <element signature="e#555#646#0" />
+            <element signature="e#556#645#0" />
+            <element signature="e#898#929#0" />
+            <element signature="e#1010#1170#0" />
+            <element signature="e#1046#1164#0" />
+            <element signature="e#1210#2184#0" />
+            <element signature="e#1251#1470#0" />
+            <element signature="e#1537#1759#0" />
+            <element signature="e#1820#2178#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
