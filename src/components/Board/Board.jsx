@@ -18,6 +18,7 @@ class Board extends PureComponent {
     addCardToTable: PropTypes.func.isRequired,
     flushTable: PropTypes.func.isRequired,
     setEndStatus: PropTypes.func.isRequired,
+    setRoundWinner: PropTypes.func.isRequired,
   }
 
   static defaultProps = {
@@ -38,8 +39,9 @@ class Board extends PureComponent {
   }
 
   componentDidMount() {
+    const center = getCenter(this.refTable.current)
     this.setState({
-      center: getCenter(this.refTable.current),
+      center,
     });
   }
 
@@ -59,7 +61,6 @@ class Board extends PureComponent {
       return this.playRound();
     }
   }
-
 
   shufflePlayers = () => {
     const { playersTurn } = this.state;
@@ -86,7 +87,7 @@ class Board extends PureComponent {
     const card = cards[playersTurn[0]][randomNumber];
     const { playerId, value, code } = card;
 
-    await pause(200);
+    await pause(500);
     return addCardToTable({ playerId, value, code });
   }
 
