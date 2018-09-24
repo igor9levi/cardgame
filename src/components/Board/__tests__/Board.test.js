@@ -173,8 +173,9 @@ describe('Test Board component', () => {
       );
       wrapper.instance().state = { playersTurn: [0, 1] };
       wrapper.instance().resetRound = jest.fn();
-      await wrapper.instance().playRound();
+      const result = await wrapper.instance().playRound();
       expect(wrapper.instance().resetRound).toBeCalled();
+      expect(result).toEqual(undefined);
     });
 
     it('it is humans turn to play', async () => {
