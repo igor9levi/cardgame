@@ -1,10 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Error = ({ error }) => (
+export const Error = ({ error, setWelcomeStatus }) => (
   <div>
     <div>
       Error Happened!
     </div>
-    <button>Try Again!</button>
+    <p>{error.message}</p>
+    <button id="try-again" type="button" onClick={setWelcomeStatus}>Try Again!</button>
   </div>
 );
+
+Error.propTypes = {
+  error: PropTypes.object,
+  setWelcomeStatus: PropTypes.func.isRequired,
+};
+
+export default Error;

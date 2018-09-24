@@ -1,8 +1,10 @@
-import { connect } from 'redux';
+import { connect } from 'react-redux';
 import ErrorComponent from './Error';
+import { setWelcomeStatus } from '../App/appActions';
+import { getError } from '../App/appSelectors';
 
-const mapStateToProps = state => ({
-  error: state.app.error,
+export const mapStateToProps = state => ({
+  error: getError(state),
 });
 
-export default connect(mapStateToProps(), {})(ErrorComponent);
+export default connect(mapStateToProps, { setWelcomeStatus })(ErrorComponent);

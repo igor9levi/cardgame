@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Error/__tests__/Error.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Error/__tests__/ErrorContainer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/appActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/appActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/appSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/appSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Error/Error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/Error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,9 +31,9 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="69" />
+          <entry key="project.open.time.8" value="71" />
           <entry key="project.open.time.9" value="56" />
-          <entry key="project.opened" value="179" />
+          <entry key="project.opened" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,7 +41,7 @@
           <entry key="css" value="17" />
           <entry key="eslintrc" value="2" />
           <entry key="html" value="1" />
-          <entry key="js" value="243" />
+          <entry key="js" value="255" />
           <entry key="json" value="4" />
           <entry key="jsx" value="6" />
           <entry key="txt" value="2" />
@@ -50,23 +53,23 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="6" />
           <entry key="JSX Harmony" value="6" />
-          <entry key="JavaScript" value="243" />
+          <entry key="JavaScript" value="255" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="177" />
+          <entry key="ESLintLanguageService" value="179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1516" />
           <entry key="eslintrc" value="25" />
-          <entry key="js" value="26211" />
+          <entry key="js" value="27126" />
           <entry key="json" value="89" />
           <entry key="jsx" value="7174" />
-          <entry key="txt" value="615" />
+          <entry key="txt" value="665" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,8 +77,8 @@
           <entry key="CSS" value="1516" />
           <entry key="JSON" value="114" />
           <entry key="JSX Harmony" value="7174" />
-          <entry key="JavaScript" value="26211" />
-          <entry key="PLAIN_TEXT" value="615" />
+          <entry key="JavaScript" value="27126" />
+          <entry key="PLAIN_TEXT" value="665" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -90,28 +93,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App/appConstants.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+            <state relative-caret-position="34">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Error/__tests__/Error.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/App/appSelectors.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Error/Error.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="141" selection-start-line="141" selection-end-line="141" />
+            <state relative-caret-position="2074">
+              <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
               <folding>
                 <element signature="e#225#250#0" />
               </folding>
@@ -154,21 +181,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/App/appSelectors.js" />
-        <option value="$PROJECT_DIR$/src/components/App/index.js" />
-        <option value="$PROJECT_DIR$/src/modules/Player/playerSelectors.js" />
-        <option value="$PROJECT_DIR$/src/components/Board/index.js" />
         <option value="$PROJECT_DIR$/src/components/App/App.js" />
         <option value="$PROJECT_DIR$/src/components/Board/Card/index.js" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainter.js" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/index.js" />
         <option value="$PROJECT_DIR$/src/store/store.js" />
         <option value="$PROJECT_DIR$/src/components/Error/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" />
         <option value="$PROJECT_DIR$/src/components/App/appReducer.js" />
         <option value="$PROJECT_DIR$/src/modules/api/ApiProvider.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
-        <option value="$PROJECT_DIR$/src/components/Error/Error.js" />
         <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" />
         <option value="$PROJECT_DIR$/src/components/Board/__tests__/BoardContainer.test.js" />
@@ -205,6 +226,12 @@
         <option value="$PROJECT_DIR$/src/components/App/__tests__/appReducer.test.js" />
         <option value="$PROJECT_DIR$/src/components/App/appActions.js" />
         <option value="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Error/ErrorContainer.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Error/__tests__/ErrorContainer.test.js" />
+        <option value="$PROJECT_DIR$/src/components/App/appSelectors.js" />
+        <option value="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Error/Error.js" />
+        <option value="$PROJECT_DIR$/src/components/Error/__tests__/Error.test.js" />
       </list>
     </option>
   </component>
@@ -266,14 +293,6 @@
               <item name="cardgame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Board" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -290,6 +309,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Error" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
@@ -537,7 +564,9 @@
       <workItem from="1537750045276" duration="1162000" />
       <workItem from="1537751257933" duration="1104000" />
       <workItem from="1537752465264" duration="1171000" />
-      <workItem from="1537753680845" duration="931000" />
+      <workItem from="1537753680845" duration="1164000" />
+      <workItem from="1537754893123" duration="1155000" />
+      <workItem from="1537756107296" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
       <created>1536090772834</created>
@@ -798,17 +827,24 @@
       <option name="project" value="LOCAL" />
       <updated>1537753440448</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="refactor: app actions not to use getState">
+      <created>1537754663005</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1537754663006</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176364000" />
+    <option name="totallyTimeSpent" value="178141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17986578" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -857,7 +893,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: show players cards on board" />
     <MESSAGE value="feat: show cards in order" />
     <MESSAGE value="feat: play cards to center" />
     <MESSAGE value="feat: add full automated round" />
@@ -882,26 +917,10 @@
     <MESSAGE value="feat: prevent multiple rapid clicks" />
     <MESSAGE value="test: update ScoreBoard tests" />
     <MESSAGE value="test: App" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: App" />
+    <MESSAGE value="refactor: app actions not to use getState" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: app actions not to use getState" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Welcome/WelcomeContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -916,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Error/ErrorContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/api/ApiProvider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -932,13 +944,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/coverage/lcov-report/index.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Error/Error.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1124,20 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerSelectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/BoardContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/BoardContainer.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1149,27 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/appSelectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/AppContainer.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/AppContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1201,26 +1171,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Error/ErrorContainer.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/AppContainer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/AppContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerSelectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/BoardContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/appConstants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="498">
           <caret line="37" column="28" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Error/__tests__/ErrorContainer.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="2074">
+          <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
           <folding>
             <element signature="e#225#250#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Error/ErrorContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/appSelectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Error/Error.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Error/__tests__/Error.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
