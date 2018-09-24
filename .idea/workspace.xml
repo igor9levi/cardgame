@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Card/__tests__/CardContainer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/api/__tests__/ApiProvider.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/__tests__/__snapshots__/Board.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/__tests__/__snapshots__/Board.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome/__tests__/__snapshots__/Welcome.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/__tests__/__snapshots__/Welcome.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/api/ApiProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/api/ApiProvider.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +20,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="5" />
-          <entry key="project.open.time.10" value="18" />
+          <entry key="project.open.time.10" value="19" />
           <entry key="project.open.time.11" value="14" />
           <entry key="project.open.time.12" value="6" />
           <entry key="project.open.time.13" value="5" />
@@ -42,7 +30,7 @@
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="79" />
           <entry key="project.open.time.9" value="58" />
-          <entry key="project.opened" value="193" />
+          <entry key="project.opened" value="194" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -68,17 +56,17 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="191" />
+          <entry key="ESLintLanguageService" value="192" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1516" />
           <entry key="eslintrc" value="25" />
-          <entry key="js" value="29662" />
+          <entry key="js" value="30066" />
           <entry key="json" value="89" />
           <entry key="jsx" value="7176" />
-          <entry key="txt" value="665" />
+          <entry key="txt" value="694" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,8 +74,8 @@
           <entry key="CSS" value="1516" />
           <entry key="JSON" value="114" />
           <entry key="JSX Harmony" value="7176" />
-          <entry key="JavaScript" value="29662" />
-          <entry key="PLAIN_TEXT" value="665" />
+          <entry key="JavaScript" value="30066" />
+          <entry key="PLAIN_TEXT" value="694" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -110,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="578">
+              <caret line="194" column="7" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="7" />
               <folding>
                 <element signature="e#244#528#0" />
                 <element signature="e#248#339#0" />
@@ -132,24 +120,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+            <state relative-caret-position="249">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="95" column="92" selection-start-line="95" selection-start-column="92" selection-end-line="95" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -174,6 +160,7 @@
       <find>flushTable</find>
       <find>pau</find>
       <find>pause</find>
+      <find>block</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -234,10 +221,10 @@
         <option value="$PROJECT_DIR$/src/modules/api/__tests__/ApiProvider.test.js" />
         <option value="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Board/Card/__tests__/CardContainer.test.js" />
-        <option value="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" />
         <option value="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" />
         <option value="$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js" />
         <option value="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" />
       </list>
     </option>
   </component>
@@ -548,6 +535,7 @@
       <workItem from="1537826502468" duration="1109000" />
       <workItem from="1537827770010" duration="1170000" />
       <workItem from="1537828979655" duration="918000" />
+      <workItem from="1537830199599" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
       <created>1536090772834</created>
@@ -815,17 +803,31 @@
       <option name="project" value="LOCAL" />
       <updated>1537754663006</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="test: helpers, player">
+      <created>1537830248661</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1537830248661</updated>
+    </task>
+    <task id="LOCAL-00040" summary="test: refactor">
+      <created>1537830515222</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1537830515222</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190254000" />
+    <option name="totallyTimeSpent" value="191236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21208054" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2147651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -874,8 +876,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: show cards in order" />
-    <MESSAGE value="feat: play cards to center" />
     <MESSAGE value="feat: add full automated round" />
     <MESSAGE value="feat: calculate winner" />
     <MESSAGE value="feat: add finish screen" />
@@ -899,7 +899,9 @@
     <MESSAGE value="test: update ScoreBoard tests" />
     <MESSAGE value="test: App" />
     <MESSAGE value="refactor: app actions not to use getState" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: app actions not to use getState" />
+    <MESSAGE value="test: helpers, player" />
+    <MESSAGE value="test: refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: refactor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.css">
@@ -1217,27 +1219,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="1615">
           <caret line="95" column="92" selection-start-line="95" selection-start-column="92" selection-end-line="95" selection-end-column="92" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="578">
+          <caret line="194" column="7" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="7" />
           <folding>
             <element signature="e#244#528#0" />
             <element signature="e#248#339#0" />
@@ -1247,6 +1239,23 @@
             <element signature="e#434#525#0" />
             <element signature="e#435#524#0" />
             <element signature="e#804#835#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

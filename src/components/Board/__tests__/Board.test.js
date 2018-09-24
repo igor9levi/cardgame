@@ -191,7 +191,7 @@ describe('Test Board component', () => {
       expect(result).toEqual(false);
       expect(wrapper.instance().resetRound).not.toBeCalled();
       expect(animationHelpers.pause).not.toBeCalled();
-      // expect(props.unBlockClick).toBeCalled();
+      expect(props.unblockClick).toBeCalled();
     });
 
     it('add random card to table after 500ms', async () => {
