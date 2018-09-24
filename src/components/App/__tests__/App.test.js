@@ -1,18 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import App from '../App';
-// import AppContainer from '../AppContainer';
+import { APP_STATUS } from '../appConstants';
 
+describe('Test App', () => {
+  it('renders App without crashing status welcome', () => {
+    const wrapper = shallow(<App status={APP_STATUS.WELCOME} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 
-// it('renders without crashing', () => {
-//   const div = document.createElement('div');
-//   ReactDOM.render(<App store={} />, div);
-//   ReactDOM.unmountComponentAtNode(div);
-// });
+  it('renders App without crashing status welcome', () => {
+    const wrapper = shallow(<App status={APP_STATUS.PLAY} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 
-it('renders App without crashing', () => {
-  const store = { subscribe: () => {}, dispatch: () => {}, getState: () => {} }
-  const wrapper = shallow(<App status={1} />);
-  expect(wrapper).toMatchSnapshot();
+  it('renders App without crashing status welcome', () => {
+    const wrapper = shallow(<App status={APP_STATUS.END} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders App without crashing status welcome', () => {
+    const wrapper = shallow(<App status={APP_STATUS.LOADING} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
