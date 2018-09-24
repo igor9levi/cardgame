@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoardContainer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,9 +28,9 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="63" />
-          <entry key="project.open.time.9" value="55" />
-          <entry key="project.opened" value="171" />
+          <entry key="project.open.time.8" value="65" />
+          <entry key="project.open.time.9" value="56" />
+          <entry key="project.opened" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,14 +56,14 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="169" />
+          <entry key="ESLintLanguageService" value="172" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1516" />
           <entry key="eslintrc" value="25" />
-          <entry key="js" value="24012" />
+          <entry key="js" value="24256" />
           <entry key="json" value="89" />
           <entry key="jsx" value="7174" />
           <entry key="txt" value="581" />
@@ -76,7 +74,7 @@
           <entry key="CSS" value="1516" />
           <entry key="JSON" value="114" />
           <entry key="JSX Harmony" value="7174" />
-          <entry key="JavaScript" value="24012" />
+          <entry key="JavaScript" value="24256" />
           <entry key="PLAIN_TEXT" value="581" />
         </counts>
       </usages-collector>
@@ -103,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="391">
+              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -115,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -211,8 +209,8 @@
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Board/Board.jsx" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoardContainer.test.js" />
-        <option value="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js" />
+        <option value="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js" />
       </list>
     </option>
   </component>
@@ -244,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,7 +359,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -575,6 +573,9 @@
       <workItem from="1537728032570" duration="977000" />
       <workItem from="1537729244498" duration="443000" />
       <workItem from="1537730458157" duration="704000" />
+      <workItem from="1537745196243" duration="756000" />
+      <workItem from="1537746405938" duration="1148000" />
+      <workItem from="1537747612447" duration="158000" />
     </task>
     <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
       <created>1536090772834</created>
@@ -825,13 +826,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167968000" />
+    <option name="totallyTimeSpent" value="170030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29127517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1197,16 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1228,20 +1219,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="1122">
+          <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="391">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

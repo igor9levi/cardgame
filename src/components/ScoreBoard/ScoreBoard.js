@@ -12,12 +12,18 @@ const ScoreBoard = ({ score, setWelcomeStatus }) => {
       <p>Rest of the scores are</p>
       <div>
         {score.map((result, index) => (
-          <div key={Math.random()}>
+          <div key={index}>
             {`Player${index}: ${result}`}
           </div>
         ))}
       </div>
-      <button type="button" onClick={setWelcomeStatus}>Start new Game</button>
+      <button
+        id="new-game"
+        type="button"
+        onClick={setWelcomeStatus}
+      >
+        Start new Game
+      </button>
     </div>
   );
 };
