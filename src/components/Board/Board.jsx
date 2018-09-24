@@ -40,7 +40,7 @@ class Board extends PureComponent {
   }
 
   componentDidMount() {
-    const center = getCenter(this.refTable.current)
+    const center = getCenter(this.refTable.current);
     this.setState({
       center,
     });
@@ -73,7 +73,7 @@ class Board extends PureComponent {
 
   playRound = async () => {
     const {
-      cards, addCardToTable, table, numPlayers, unblockClick
+      cards, addCardToTable, table, numPlayers, unblockClick,
     } = this.props;
     const { playersTurn } = this.state;
 

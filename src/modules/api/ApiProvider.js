@@ -8,37 +8,27 @@ class ApiProvider {
   }
 
   async getDeck() {
-    try {
-      const response = await this.apiCall({ url: this.deckUrl });
-      const deck = await response.json();
+    const response = await this.apiCall({ url: this.deckUrl });
+    const deck = await response.json();
 
-      if (deck.success !== true) {
-        throw new Error('No success in fetching deck!');
-      }
-
-      return deck.deck_id;
-    } catch (error) {
-      console.warn('Error fetching deck: ', error);
-      throw new Error(`Error fetching deck: ${error.message}`);
+    if (deck.success !== true) {
+      throw new Error('No success in fetching deck!');
     }
+
+    return deck.deck_id;
   }
 
   async getCards({ numCards, deckId }) {
     const url = `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=${numCards}`;
 
-    try {
-      const response = await this.apiCall({ url });
-      const cards = await response.json();
+    const response = await this.apiCall({ url });
+    const cards = await response.json();
 
-      if (cards.success !== true) {
-        throw new Error('No success in fetching cards!');
-      }
-
-      return cards.cards;
-    } catch (error) {
-      console.warn('Error fetching cards: ', error);
-      throw new Error(`Error fetching cards! ${error.message}`);
+    if (cards.success !== true) {
+      throw new Error('No success in fetching cards!');
     }
+
+    return cards.cards;
   }
 }
 

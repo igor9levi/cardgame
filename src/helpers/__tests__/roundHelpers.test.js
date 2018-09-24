@@ -1,4 +1,5 @@
 import * as helpers from '../roundHelpers';
+import {HUMAN_PLAYER_ID} from "../../components/App/appConstants";
 
 describe('Test calculateRoundWinner', () => {
   it('king wins round all cards different, not all caps', () => {
@@ -71,6 +72,53 @@ describe('Test calculateTablePosition', () => {
   });
 });
 
+describe('Test cardMoveDirection', () => {
+  it('position for player 0', () => {
+    const input = { playerId: 0, left: 500, top: 500 };
+    const result = {
+      left: 500,
+      top: 1000,
+    };
+    expect(helpers.cardMoveDirection(input)).toEqual(result);
+  });
+
+  it('position for player 1', () => {
+    const input = { playerId: 1, left: 500, top: 500 };
+
+    const output = {
+      left: -1000,
+      top: 500,
+    };
+    expect(helpers.cardMoveDirection(input)).toEqual(output);
+  });
+
+  it('position for player 2', () => {
+    const input = { playerId: 2, left: 500, top: 500 };
+
+    const output = {
+      left: 500,
+      top: -1000,
+    };
+    expect(helpers.cardMoveDirection(input)).toEqual(output);
+  });
+
+  it('position for player 3', () => {
+    const input = { playerId: 3, left: 500, top: 500 };
+
+    const output = {
+      left: 1000,
+      top: 500,
+    };
+    expect(helpers.cardMoveDirection(input)).toEqual(output);
+  });
+
+  it('position for default', () => {
+    const input = { playerId: 100, cardHeight: 10 };
+    const output = {};
+    expect(helpers.cardMoveDirection(input)).toEqual(output);
+  });
+});
+
 describe('Test updateScore', () => {
   it('returns ', () => {
     const score = [0, 0, 0];
@@ -133,5 +181,39 @@ describe('Test removeCardsFromPlayer', () => {
       ],
     ];
     expect(helpers.removeCardsFromPlayer(input)).toEqual(output);
+  });
+});
+
+describe('Test getCenter', () => {
+  it('returns center position', () => {
+    const node = {
+      offsetLeft: 2, offsetWidth: 2, offsetTop: 2, offsetHeight: 2,
+    };
+    const output = {
+      centerX: 3,
+      centerY: 3,
+    };
+    const result = helpers.getCenter(node);
+    expect(result).toEqual(output);
+  });
+});
+
+describe('Test checkBlock ', () => {
+  it('if player is not human, should be blocked', () => {
+    const input = { player: 2, playersTurn: [0, 1, 2] };
+    const result = helpers.checkBlock(input);
+    expect(result).toEqual(true);
+  });
+
+  it('if player is human, and is not his turn to play, should be blocked', () => {
+    const input = { player: HUMAN_PLAYER_ID, playersTurn: [1, 2, 0] };
+    const result = helpers.checkBlock(input);
+    expect(result).toEqual(true);
+  });
+
+  it('if player is not human, and is his turn to play, should NOT be blocked', () => {
+    const input = { player: HUMAN_PLAYER_ID, playersTurn: [0, 1, 2] };
+    const result = helpers.checkBlock(input);
+    expect(result).toEqual(false);
   });
 });

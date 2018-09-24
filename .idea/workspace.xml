@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Error/__tests__/Error.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Error/__tests__/ErrorContainer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Card/__tests__/CardContainer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/api/__tests__/ApiProvider.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/appSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/appSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Error/Error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/Error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/__tests__/__snapshots__/Board.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/__tests__/__snapshots__/Board.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome/__tests__/__snapshots__/Welcome.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/__tests__/__snapshots__/Welcome.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/api/ApiProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/api/ApiProvider.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,20 +39,20 @@
           <entry key="project.open.time.14" value="6" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="71" />
-          <entry key="project.open.time.9" value="56" />
-          <entry key="project.opened" value="181" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.8" value="79" />
+          <entry key="project.open.time.9" value="58" />
+          <entry key="project.opened" value="193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="17" />
-          <entry key="eslintrc" value="2" />
+          <entry key="eslintrc" value="3" />
           <entry key="html" value="1" />
-          <entry key="js" value="255" />
-          <entry key="json" value="4" />
-          <entry key="jsx" value="6" />
+          <entry key="js" value="281" />
+          <entry key="json" value="5" />
+          <entry key="jsx" value="8" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -51,24 +60,24 @@
         <counts>
           <entry key="CSS" value="17" />
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="6" />
-          <entry key="JSX Harmony" value="6" />
-          <entry key="JavaScript" value="255" />
+          <entry key="JSON" value="8" />
+          <entry key="JSX Harmony" value="8" />
+          <entry key="JavaScript" value="281" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="179" />
+          <entry key="ESLintLanguageService" value="191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1516" />
           <entry key="eslintrc" value="25" />
-          <entry key="js" value="27126" />
+          <entry key="js" value="29662" />
           <entry key="json" value="89" />
-          <entry key="jsx" value="7174" />
+          <entry key="jsx" value="7176" />
           <entry key="txt" value="665" />
         </counts>
       </usages-collector>
@@ -76,8 +85,8 @@
         <counts>
           <entry key="CSS" value="1516" />
           <entry key="JSON" value="114" />
-          <entry key="JSX Harmony" value="7174" />
-          <entry key="JavaScript" value="27126" />
+          <entry key="JSX Harmony" value="7176" />
+          <entry key="JavaScript" value="29662" />
           <entry key="PLAIN_TEXT" value="665" />
         </counts>
       </usages-collector>
@@ -93,57 +102,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="1275">
+              <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Error/__tests__/Error.test.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            <state relative-caret-position="136">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#244#528#0" />
+                <element signature="e#248#339#0" />
+                <element signature="e#249#338#0" />
+                <element signature="e#341#432#0" />
+                <element signature="e#342#431#0" />
+                <element signature="e#434#525#0" />
+                <element signature="e#435#524#0" />
+                <element signature="e#804#835#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App/appSelectors.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="651">
+              <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Error/Error.js">
+        <entry file="file://$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="484">
+              <caret line="95" column="92" selection-start-line="95" selection-start-column="92" selection-end-line="95" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2074">
-              <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
-              <folding>
-                <element signature="e#225#250#0" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -181,20 +187,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/App/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Board/Card/index.js" />
-        <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainter.js" />
-        <option value="$PROJECT_DIR$/src/components/ScoreBoard/index.js" />
-        <option value="$PROJECT_DIR$/src/store/store.js" />
         <option value="$PROJECT_DIR$/src/components/Error/index.js" />
         <option value="$PROJECT_DIR$/src/components/App/appReducer.js" />
-        <option value="$PROJECT_DIR$/src/modules/api/ApiProvider.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/src/setupTests.js" />
-        <option value="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" />
         <option value="$PROJECT_DIR$/src/components/Board/__tests__/BoardContainer.test.js" />
-        <option value="$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js" />
-        <option value="$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Welcome/__tests__/Welcome.test.js" />
         <option value="$PROJECT_DIR$/src/components/Board/Board.js" />
@@ -203,11 +200,9 @@
         <option value="$PROJECT_DIR$/src/helpers/animationHelpers.js" />
         <option value="$PROJECT_DIR$/src/components/Board/Board.css" />
         <option value="$PROJECT_DIR$/src/components/Board/Card/Card.css" />
-        <option value="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" />
         <option value="$PROJECT_DIR$/src/modules/Player/playerActions.js" />
         <option value="$PROJECT_DIR$/src/modules/Player/playerReducer.js" />
         <option value="$PROJECT_DIR$/src/modules/Player/playerConstants.js" />
-        <option value="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" />
         <option value="$PROJECT_DIR$/src/helpers/roundHelpers.js" />
         <option value="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.css" />
@@ -215,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/components/Welcome/Welcome.css" />
         <option value="$PROJECT_DIR$/src/components/App/App.css" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoardContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/Board/Board.jsx" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoardContainer.test.js" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.js" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/__tests__/ScoreBoard.test.js" />
@@ -232,6 +226,18 @@
         <option value="$PROJECT_DIR$/src/components/Error/ErrorContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Error/Error.js" />
         <option value="$PROJECT_DIR$/src/components/Error/__tests__/Error.test.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Board.jsx" />
+        <option value="$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js" />
+        <option value="$PROJECT_DIR$/src/modules/api/ApiProvider.js" />
+        <option value="$PROJECT_DIR$/src/modules/api/__tests__/ApiProvider.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/CardContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/__tests__/CardContainer.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" />
+        <option value="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" />
+        <option value="$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" />
       </list>
     </option>
   </component>
@@ -263,6 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,57 +299,19 @@
               <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
               <item name="cardgame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Board" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
               <item name="cardgame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Board" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
               <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Error" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -567,6 +536,18 @@
       <workItem from="1537753680845" duration="1164000" />
       <workItem from="1537754893123" duration="1155000" />
       <workItem from="1537756107296" duration="389000" />
+      <workItem from="1537813722194" duration="140000" />
+      <workItem from="1537816475426" duration="923000" />
+      <workItem from="1537817792721" duration="1071000" />
+      <workItem from="1537819230120" duration="1110000" />
+      <workItem from="1537820441755" duration="1172000" />
+      <workItem from="1537821657636" duration="1122000" />
+      <workItem from="1537822868066" duration="1140000" />
+      <workItem from="1537824077816" duration="1123000" />
+      <workItem from="1537825290308" duration="1115000" />
+      <workItem from="1537826502468" duration="1109000" />
+      <workItem from="1537827770010" duration="1170000" />
+      <workItem from="1537828979655" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
       <created>1536090772834</created>
@@ -838,13 +819,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178141000" />
+    <option name="totallyTimeSpent" value="190254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17986578" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21208054" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -921,88 +902,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="refactor: app actions not to use getState" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Welcome/WelcomeContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Error/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/api/ApiProvider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coverage/lcov-report/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Welcome/__tests__/Welcome.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1017,27 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerConstants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/animationHelpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1045,45 +923,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/roundHelpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/CardContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Welcome/Welcome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1129,31 +972,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/BoardContainer.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1179,27 +1001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/AppContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Player/playerSelectors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/BoardContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,30 +1022,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
-          <folding>
-            <element signature="e#225#250#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Error/ErrorContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="58" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1253,11 +1038,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Error/Error.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="136">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1265,8 +1047,206 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/store.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/__tests__/playerActions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerConstants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/__tests__/playerReducer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Player/playerReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/BoardContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Welcome/Welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Welcome/WelcomeContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/AppContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/__tests__/ApiProvider.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/ApiProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/BoardContainer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/CardContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/__tests__/CardContainer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/roundHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="207" column="61" selection-start-line="207" selection-start-column="61" selection-end-line="207" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="95" column="92" selection-start-line="95" selection-start-column="92" selection-end-line="95" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#244#528#0" />
+            <element signature="e#248#339#0" />
+            <element signature="e#249#338#0" />
+            <element signature="e#341#432#0" />
+            <element signature="e#342#431#0" />
+            <element signature="e#434#525#0" />
+            <element signature="e#435#524#0" />
+            <element signature="e#804#835#0" />
           </folding>
         </state>
       </provider>

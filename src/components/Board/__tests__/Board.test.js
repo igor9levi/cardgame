@@ -38,6 +38,7 @@ const props = {
   flushTable: jest.fn(),
   setEndStatus: jest.fn(),
   setRoundWinner: jest.fn(),
+  unblockClick: jest.fn(),
 };
 
 roundHelpers.getCenter = jest.fn(() => ({
@@ -50,6 +51,13 @@ describe('Test Board component', () => {
     it('Renders correctly', () => {
       const wrapper = shallow(
         <Board {...props} />,
+      );
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('Renders correctly all 4 players', () => {
+      const wrapper = shallow(
+        <Board {...props} numPlayers={4} score={[0, 0, 0, 0]} />,
       );
       expect(wrapper).toMatchSnapshot();
     });
@@ -173,20 +181,23 @@ describe('Test Board component', () => {
       const wrapper = shallow(
         <Board {...props} numPlayers={3} />,
       );
-      animationHelpers.pause = jest.fn(() => Promise.resolve({}))
-      wrapper.instance().state = { playersTurn: [0, 1, 2] };
+      animationHelpers.pause = jest.fn(() => Promise.resolve({}));
+      // wrapper.instance().state = { playersTurn: [0, 1, 2] };
+      wrapper.setState({ playersTurn: [0, 1, 2] });
       wrapper.instance().resetRound = jest.fn();
       const result = await wrapper.instance().playRound();
+
       expect(result).toEqual(false);
       expect(wrapper.instance().resetRound).not.toBeCalled();
       expect(animationHelpers.pause).not.toBeCalled();
+      // expect(props.unBlockClick).toBeCalled();
     });
 
     it('add random card to table after 500ms', async () => {
       const wrapper = shallow(
         <Board {...props} numPlayers={3} />,
       );
-      animationHelpers.pause = jest.fn(() => Promise.resolve({}))
+      animationHelpers.pause = jest.fn(() => Promise.resolve({}));
       wrapper.instance().state = { playersTurn: [1, 2, 0] };
       wrapper.instance().resetRound = jest.fn();
       const result = await wrapper.instance().playRound();
@@ -196,5 +207,4 @@ describe('Test Board component', () => {
       expect(result).toEqual(undefined);
     });
   });
-
 });

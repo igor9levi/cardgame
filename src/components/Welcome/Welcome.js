@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Welcome = ({ startGame }) => (
-  <div className={"welcome-container"}>
+  <div className="welcome-container">
     <h1 className="welcome-message">Hello! Please choose number of players</h1>
     <button
       id="btn1"

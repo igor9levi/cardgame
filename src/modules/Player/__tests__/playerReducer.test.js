@@ -14,6 +14,8 @@ describe('Test playerReducer', () => {
       cards: [],
       score: [0, 0, 0],
       table: [],
+      winner: null,
+      block: false,
     };
     expect(reducer(undefined, action)).toEqual(output);
   });
@@ -25,8 +27,68 @@ describe('Test playerReducer', () => {
       cards,
       score: [],
       table: [],
+      winner: null,
+      block: false,
     };
     expect(reducer(undefined, action)).toEqual(output);
+  });
+
+  it('set round winner', () => {
+    const cards = [[{ test: true }, { test: true }], [{ test: true }, { test: true }]];
+    const action = { type: 'SET_ROUND_WINNER', payload: 2 };
+    const state = {
+      cards,
+      score: [],
+      table: [],
+      winner: null,
+      block: false,
+    };
+    const output = {
+      cards,
+      score: [],
+      table: [],
+      winner: 2,
+      block: false,
+    };
+    expect(reducer(state, action)).toEqual(output);
+  });
+it('set block click', () => {
+    const cards = [[{ test: true }, { test: true }], [{ test: true }, { test: true }]];
+    const action = { type: 'BLOCK_CLICK', payload: 2 };
+    const state = {
+      cards,
+      score: [],
+      table: [],
+      winner: null,
+      block: false,
+    };
+    const output = {
+      cards,
+      score: [],
+      table: [],
+      winner: null,
+      block: true,
+    };
+    expect(reducer(state, action)).toEqual(output);
+  });
+it('set unblock click', () => {
+    const cards = [[{ test: true }, { test: true }], [{ test: true }, { test: true }]];
+    const action = { type: 'UNBLOCK_CLICK', payload: 2 };
+    const state = {
+      cards,
+      score: [],
+      table: [],
+      winner: null,
+      block: true,
+    };
+    const output = {
+      cards,
+      score: [],
+      table: [],
+      winner: null,
+      block: false,
+    };
+    expect(reducer(state, action)).toEqual(output);
   });
 
   it('add card to table', () => {
@@ -56,11 +118,15 @@ describe('Test playerReducer', () => {
       cards,
       score: [0, 0],
       table: [{ test: true }],
+      winner: 2,
+      block: false,
     };
     const output = {
       cards: [[{ test: true }], [{ test: true }]],
       score: [0, 1],
       table: [],
+      winner: null,
+      block: false,
     };
     expect(reducer(state, action)).toEqual(output);
   });
