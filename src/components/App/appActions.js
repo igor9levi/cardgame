@@ -49,13 +49,13 @@ export const getCards = async ({ deckId, numPlayers }) => {
   return cards;
 };
 
-export const startGame = numPlayers => async (dispatch, getState) => {
+export const startGame = numPlayers => async (dispatch) => {
   dispatch(setNumPlayers(numPlayers));
   try {
     const deckId = await getDeck();
     dispatch(setDeck({ deckId }));
 
-    const cards = await getCards({ deckId, numPlayers: selectors.getNumPlayers(getState()) });
+    const cards = await getCards({ deckId, numPlayers });
     dispatch(setCards({ cards }));
     dispatch(setPlayStatus());
   } catch (error) {

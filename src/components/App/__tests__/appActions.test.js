@@ -125,4 +125,19 @@ describe('Test appActions', () => {
       expect(result[0][0]).toHaveProperty('playerId');
     });
   });
+
+  describe('Test startGame', () => {
+    it('returns function', () => {
+      const result = actions.startGame();
+      expect(typeof result).toEqual('function');
+    });
+
+    it('returns function', async () => {
+      const dispatch = jest.fn();
+      const result = actions.startGame();
+      await result(dispatch);
+      expect(dispatch).toBeCalled();
+      expect(dispatch).toHaveBeenCalledTimes(4);
+    });
+  });
 });

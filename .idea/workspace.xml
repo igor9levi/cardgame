@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/App/__tests__/AppContainer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/App/__tests__/appReducer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/AppContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/AppContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/__tests__/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/__tests__/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/__tests__/__snapshots__/App.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/__tests__/__snapshots__/App.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/BoardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/BoardContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/appActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/appActions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,9 +28,9 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="68" />
+          <entry key="project.open.time.8" value="69" />
           <entry key="project.open.time.9" value="56" />
-          <entry key="project.opened" value="178" />
+          <entry key="project.opened" value="179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,17 +56,17 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="176" />
+          <entry key="ESLintLanguageService" value="177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1516" />
           <entry key="eslintrc" value="25" />
-          <entry key="js" value="25895" />
+          <entry key="js" value="26211" />
           <entry key="json" value="89" />
           <entry key="jsx" value="7174" />
-          <entry key="txt" value="612" />
+          <entry key="txt" value="615" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -79,8 +74,8 @@
           <entry key="CSS" value="1516" />
           <entry key="JSON" value="114" />
           <entry key="JSX Harmony" value="7174" />
-          <entry key="JavaScript" value="25895" />
-          <entry key="PLAIN_TEXT" value="612" />
+          <entry key="JavaScript" value="26211" />
+          <entry key="PLAIN_TEXT" value="615" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -106,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="44" column="80" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="80" />
+            <state relative-caret-position="362">
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -115,10 +110,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+            <state relative-caret-position="566">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#225#250#0" />
               </folding>
             </state>
           </provider>
@@ -541,7 +536,8 @@
       <workItem from="1537748830993" duration="1092000" />
       <workItem from="1537750045276" duration="1162000" />
       <workItem from="1537751257933" duration="1104000" />
-      <workItem from="1537752465264" duration="925000" />
+      <workItem from="1537752465264" duration="1171000" />
+      <workItem from="1537753680845" duration="931000" />
     </task>
     <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
       <created>1536090772834</created>
@@ -795,17 +791,24 @@
       <option name="project" value="LOCAL" />
       <updated>1537747806273</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="test: App">
+      <created>1537753440448</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1537753440448</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175187000" />
+    <option name="totallyTimeSpent" value="176364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17248322" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -854,7 +857,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create scoreBoard component and game status" />
     <MESSAGE value="feat: show players cards on board" />
     <MESSAGE value="feat: show cards in order" />
     <MESSAGE value="feat: play cards to center" />
@@ -879,7 +881,8 @@
     <MESSAGE value="test: Board.js" />
     <MESSAGE value="feat: prevent multiple rapid clicks" />
     <MESSAGE value="test: update ScoreBoard tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: update ScoreBoard tests" />
+    <MESSAGE value="test: App" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: App" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/store/index.js">
@@ -1207,17 +1210,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="44" column="80" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="80" />
+        <state relative-caret-position="362">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+        <state relative-caret-position="566">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#225#250#0" />
           </folding>
         </state>
       </provider>
