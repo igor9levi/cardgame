@@ -81,7 +81,7 @@ class Card extends React.Component {
     const leftPosition = center.centerX + left;
     const topPosition = center.centerY + top;
 
-    await animation.pause(300);
+    await animation.pause(400);
 
     this.setState({
       centered: true,
@@ -117,14 +117,14 @@ class Card extends React.Component {
 
   handleClick = () => {
     const {
-      playerId, addCardToTable, value, code, block,
+      playerId, addCardToTable, blockClick, value, code, block,
     } = this.props;
 
     if ((playerId !== HUMAN_PLAYER_ID) || block) {
-      return;
+      return null;
     }
 
-    this.props.blockClick();
+    blockClick();
     addCardToTable({ playerId, value, code });
   }
 
