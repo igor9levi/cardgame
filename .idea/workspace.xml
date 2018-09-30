@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +37,7 @@
           <entry key="css" value="18" />
           <entry key="eslintrc" value="3" />
           <entry key="html" value="1" />
-          <entry key="js" value="286" />
+          <entry key="js" value="287" />
           <entry key="json" value="5" />
           <entry key="jsx" value="9" />
           <entry key="txt" value="2" />
@@ -51,7 +49,7 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="8" />
           <entry key="JSX Harmony" value="9" />
-          <entry key="JavaScript" value="286" />
+          <entry key="JavaScript" value="287" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -66,7 +64,7 @@
           <entry key="eslintrc" value="25" />
           <entry key="js" value="31525" />
           <entry key="json" value="89" />
-          <entry key="jsx" value="7185" />
+          <entry key="jsx" value="7186" />
           <entry key="txt" value="701" />
         </counts>
       </usages-collector>
@@ -74,7 +72,7 @@
         <counts>
           <entry key="CSS" value="1545" />
           <entry key="JSON" value="114" />
-          <entry key="JSX Harmony" value="7185" />
+          <entry key="JSX Harmony" value="7186" />
           <entry key="JavaScript" value="31525" />
           <entry key="PLAIN_TEXT" value="701" />
         </counts>
@@ -90,14 +88,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="63" column="32" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="32" />
+            <state relative-caret-position="566">
+              <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helpers/animationHelpers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -111,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -215,10 +222,10 @@
         <option value="$PROJECT_DIR$/src/helpers/__tests__/roundHelpers.test.js" />
         <option value="$PROJECT_DIR$/src/helpers/__tests__/animationHelpers.test.js" />
         <option value="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" />
-        <option value="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" />
         <option value="$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js" />
         <option value="$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js" />
         <option value="$PROJECT_DIR$/src/components/ScoreBoard/ScoreBoard.css" />
+        <option value="$PROJECT_DIR$/src/components/Board/Card/Card.jsx" />
       </list>
     </option>
   </component>
@@ -559,7 +566,7 @@
       <workItem from="1538002757921" duration="1133000" />
       <workItem from="1538003972932" duration="1124000" />
       <workItem from="1538005184704" duration="228000" />
-      <workItem from="1538298798962" duration="420000" />
+      <workItem from="1538298798962" duration="1124000" />
     </task>
     <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
       <created>1536090772834</created>
@@ -848,11 +855,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538004820243</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="test: Card.js">
+      <created>1538299275272</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1538299275273</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199150000" />
+    <option name="totallyTimeSpent" value="199854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -946,13 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/animationHelpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1230,16 +1237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="63" column="32" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Board/Card/__tests__/Card.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1277,6 +1274,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/appActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1284,10 +1288,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/__tests__/appActions.test.js">
+    <entry file="file://$PROJECT_DIR$/src/helpers/animationHelpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Card/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
