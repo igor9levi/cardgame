@@ -11,6 +11,8 @@
 .top-row {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .middle-row {
@@ -35,12 +37,16 @@
     display: flex;
     flex: 1;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .player-right {
     display: flex;
     flex: 1;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .row-container {
@@ -49,7 +55,7 @@
 }
 
 .shrink {
-    width: 30%;
+    max-width: 30%;
 }
 
 .bottom-row {

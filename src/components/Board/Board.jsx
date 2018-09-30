@@ -164,8 +164,7 @@ class Board extends PureComponent {
           <div className="row-container shrink">
             <p className="player-info">Player 2</p>
             <p className="player-info">
-              Score:
-              {score[2]}
+              {`Score: ${score[2]}`}
             </p>
             <div className="top-row">
               {this.renderPlayer({ player: 2, cards })}
@@ -177,8 +176,7 @@ class Board extends PureComponent {
           <div className="row-container shrink">
             <p className="player-info">Player 1</p>
             <p className="player-info">
-                  Score:
-              {score[1]}
+              {`Score: ${score[1]}`}
             </p>
             <div className="player-left">
               {this.renderPlayer({ player: 1, cards })}
@@ -190,8 +188,7 @@ class Board extends PureComponent {
           <div className="row-container shrink">
             <p className="player-info">Player 3</p>
             <p className="player-info">
-                  Score:
-              {score[3]}
+              {`Score: ${score[3]}`}
             </p>
             <div className="player-right">
               {this.renderPlayer({ player: 3, cards })}
@@ -203,8 +200,7 @@ class Board extends PureComponent {
           <div className="row-container">
             <p className="player-info">Me</p>
             <p className="player-info">
-              Score:
-              {score[0]}
+              {`Score: ${score[0]}`}
             </p>
             <div className="bottom-row">
               {this.renderPlayer({ player: 0, cards })}
