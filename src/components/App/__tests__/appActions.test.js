@@ -3,20 +3,6 @@ import * as appConstants from '../appConstants';
 import * as playerConstants from '../../../modules/Player/playerConstants';
 import provider from '../../../modules/api/ApiProvider';
 
-// const cardsFromApi = [
-//   {
-//     image: 'https://deckofcardsapi.com/static/img/KH.png',
-//     value: 'KING',
-//     suit: 'HEARTS',
-//     code: 'KH',
-//   },
-//   {
-//     image: 'https://deckofcardsapi.com/static/img/8C.png',
-//     value: '8',
-//     suit: 'CLUBS',
-//     code: '8C',
-//   },
-// ];
 const cardsFromApi = [];
 for (let i = 0; i < 21; i++) { cardsFromApi.push({}); }
 provider.getDeck = jest.fn(() => 'deck_id');

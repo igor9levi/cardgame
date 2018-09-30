@@ -33,7 +33,6 @@ describe('Test Card', () => {
     it('flushes to remove card', () => {
       const component = new Card({});
       component.state = { flush: true };
-
       component.removeCard = jest.fn();
 
       const result = component.componentDidUpdate();
@@ -46,7 +45,6 @@ describe('Test Card', () => {
     it('should rotate card', () => {
       const component = new Card({});
       component.state = { flush: false };
-
       animation.shouldRotateCard = jest.fn(() => true);
       component.rotateCard = jest.fn();
 
@@ -60,8 +58,6 @@ describe('Test Card', () => {
     it('should animate card', () => {
       const component = new Card({});
       component.state = { flush: false };
-
-
       animation.shouldRotateCard = jest.fn(() => false);
       animation.shouldAnimateCard = jest.fn(() => true);
       component.animateCard = jest.fn();
@@ -76,7 +72,6 @@ describe('Test Card', () => {
     it('should play next card', () => {
       const component = new Card({});
       component.state = { flush: false };
-
       animation.shouldRotateCard = jest.fn(() => false);
       animation.shouldAnimateCard = jest.fn(() => false);
       animation.isCentered = jest.fn(() => true);
@@ -91,7 +86,6 @@ describe('Test Card', () => {
     it('should play animate off card', () => {
       const component = new Card({});
       component.state = { flush: false };
-
       animation.shouldRotateCard = jest.fn(() => false);
       animation.shouldAnimateCard = jest.fn(() => false);
       animation.isCentered = jest.fn(() => false);
