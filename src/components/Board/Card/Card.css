@@ -1,8 +1,23 @@
 .container {
     width: 50px;
-    height: 70px;
-    perspective: 1000px;
-    z-index: 1;
+    height: 75px;
+    flex: 1 0 0;
+    overflow-x: hidden;
+    /*perspective: 1000px;*/
+    /*z-index: 1;*/
+}
+
+/*.container {*/
+    /*display: flex;*/
+    /*width: 300px;*/
+/*}*/
+
+.card-container {
+    flex: 1 0 0;
+    overflow-x: hidden;
+}
+.container:last-child {
+    flex: 0 0 auto;
 }
 
 .img {

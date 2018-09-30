@@ -2,7 +2,7 @@
     min-height: 400px;
     display: flex;
     flex: 1;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -10,29 +10,36 @@
 .top-row {
     display: flex;
     flex-direction: row;
+    width: 30%;
 }
 
 .middle-row {
     display: flex;
     flex: 1;
     height: 100%;
-    flex-direction: column;
+    width: 80%;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
 .table {
     flex: 5;
-    min-height: 500px;
+    min-height: 200px;
 }
 
 .player-left {
+    display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
+    width: 30%;
 }
 
 .player-right {
+    display: flex;
     flex: 1;
+    flex-direction: row;
+    width: 30%;
 }
 
 .bottom-row {

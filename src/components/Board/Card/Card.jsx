@@ -71,7 +71,13 @@ class Card extends React.Component {
     return removeCard(code);
   }
 
-  rotateCard = () => this.setState({ flip: true })
+  rotateCard = () => this.setState({
+    flip: true,
+    styling: {
+      zIndex: 1000,
+      transitionDuration: '0.5s',
+    },
+  })
 
   animateCard = async () => {
     const { center, playerId } = this.props;

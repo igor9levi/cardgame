@@ -159,47 +159,46 @@ class Board extends PureComponent {
 
     return (
       <div className="wrapper">
-        <div className="player player-left">
-          { cards[1] && (
-          <p>
-           Score:
-            {score[1]}
-          </p>
+        <div className="top-row">
+          { cards[2] && (
+            <p>
+              Score:
+              {score[2]}
+            </p>
           )}
-          {this.renderPlayer({ player: 1, cards })}
+          {this.renderPlayer({ player: 2, cards })}
         </div>
         <div className="middle-row">
-          <div>
-            <div className="top-row">
-              { cards[2] && (
-              <p>
-             Score:
-                {score[2]}
-              </p>
+            <div className="player player-left">
+              { cards[1] && (
+                <p>
+                  Score:
+                  {score[1]}
+                </p>
               )}
-              {this.renderPlayer({ player: 2, cards })}
+              {this.renderPlayer({ player: 1, cards })}
             </div>
             <div className="player table" ref={this.refTable} />
-            <div className="bottom-row">
-              { cards[0] && (
-              <p>
-             Score:
-                {score[0]}
-              </p>
+            <div className="player player-right">
+              { cards[3] && (
+                <p>
+                  Score:
+                  {score[3]}
+                </p>
               )}
-              {this.renderPlayer({ player: 0, cards })}
+              {this.renderPlayer({ player: 3, cards })}
             </div>
-          </div>
         </div>
-        <div className="player player-right">
-          { cards[3] && (
-          <p>
-           Score:
-            {score[3]}
-          </p>
+        <div className="bottom-row">
+          { cards[0] && (
+            <p>
+              Score:
+              {score[0]}
+            </p>
           )}
-          {this.renderPlayer({ player: 3, cards })}
+          {this.renderPlayer({ player: 0, cards })}
         </div>
+
       </div>
     );
   }
