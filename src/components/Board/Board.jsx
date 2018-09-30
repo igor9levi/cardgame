@@ -159,54 +159,58 @@ class Board extends PureComponent {
 
     return (
       <div className="wrapper">
-        <div className="row-container">
-          { cards[2] && (
-            <p>
+        { cards[2] && (
+          <div className="row-container">
+            <p className="player-info">Player 2</p>
+            <p className="player-info">
               Score:
               {score[2]}
             </p>
-          )}
-          <div className="top-row">
-
-          {this.renderPlayer({ player: 2, cards })}
+            <div className="top-row">
+              {this.renderPlayer({ player: 2, cards })}
+            </div>
           </div>
-        </div>
+        )}
         <div className="middle-row">
-            <div className="row-container">
-              { cards[1] && (
-                <p>
+          { cards[1] && (
+          <div className="row-container">
+            <p className="player-info">Player 1</p>
+            <p className="player-info">
                   Score:
-                  {score[1]}
-                </p>
-              )}
-              <div className="player player-left">
+              {score[1]}
+            </p>
+            <div className="player-left">
               {this.renderPlayer({ player: 1, cards })}
-              </div>
             </div>
-            <div className="player table" ref={this.refTable} />
-            <div className="row-container">
-              { cards[3] && (
-                <p>
+          </div>
+          )}
+          <div className="player table" ref={this.refTable} />
+          { cards[3] && (
+          <div className="row-container">
+            <p className="player-info">Player 3</p>
+            <p className="player-info">
                   Score:
-                  {score[3]}
-                </p>
-              )}
-              <div className="player player-right">
+              {score[3]}
+            </p>
+            <div className="player-right">
               {this.renderPlayer({ player: 3, cards })}
-              </div>
             </div>
+          </div>
+          )}
         </div>
-        <div className="row-container">
-          { cards[0] && (
-            <p>
+        { cards[0] && (
+          <div className="row-container">
+            <p className="player-info">Me</p>
+            <p className="player-info">
               Score:
               {score[0]}
             </p>
-          )}
-          <div className="bottom-row">
-          {this.renderPlayer({ player: 0, cards })}
+            <div className="bottom-row">
+              {this.renderPlayer({ player: 0, cards })}
+            </div>
           </div>
-        </div>
+        )}
+
 
       </div>
     );

@@ -1,5 +1,6 @@
 .wrapper {
     min-height: 400px;
+    width: 100%;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -10,7 +11,6 @@
 .top-row {
     display: flex;
     flex-direction: row;
-    width: 30%;
 }
 
 .middle-row {
@@ -32,19 +32,19 @@
     display: flex;
     flex: 1;
     flex-direction: row;
-    width: 30%;
 }
 
 .player-right {
     display: flex;
     flex: 1;
     flex-direction: row;
-    width: 30%;
 }
 
 .row-container {
     display: flex;
     flex-direction: column;
+    width: 30%;
+
 }
 
 .bottom-row {
@@ -54,5 +54,10 @@
 
 .player {
     margin: 20px;
+}
 
+.player-info {
+    margin: 2px;
+    padding: 0;
+    align-self: flex-start;
 }
