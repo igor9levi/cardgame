@@ -36,11 +36,12 @@ class Board extends PureComponent {
     };
     this.state = this.initialState;
     this.refTable = React.createRef();
+    this.refBoard = React.createRef();
     this.purgatory = [];
   }
 
   componentDidMount() {
-    const center = getCenter(this.refTable.current);
+    const center = getCenter(this.refBoard.current);
     this.setState({
       center,
     });
@@ -158,7 +159,7 @@ class Board extends PureComponent {
     const { cards, score } = this.props;
 
     return (
-      <div className="wrapper">
+      <div className="wrapper" ref={this.refBoard}>
         { cards[2] && (
           <div className="row-container shrink">
             <p className="player-info">Player 2</p>
