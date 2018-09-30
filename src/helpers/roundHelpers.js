@@ -39,21 +39,21 @@ export const cardMoveDirection = ({ playerId, top, left }) => {
     case 0:
       return {
         left,
-        top: 1000,
+        top: 2000,
       };
     case 1:
       return {
-        left: -1000,
+        left: -2000,
         top,
       };
     case 2:
       return {
         left,
-        top: -1000,
+        top: -2000,
       };
     case 3:
       return {
-        left: 1000,
+        left: 2000,
         top,
       };
     default:

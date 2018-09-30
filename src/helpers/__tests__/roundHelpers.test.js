@@ -77,7 +77,7 @@ describe('Test cardMoveDirection', () => {
     const input = { playerId: 0, left: 500, top: 500 };
     const result = {
       left: 500,
-      top: 1000,
+      top: 2000,
     };
     expect(helpers.cardMoveDirection(input)).toEqual(result);
   });
@@ -86,7 +86,7 @@ describe('Test cardMoveDirection', () => {
     const input = { playerId: 1, left: 500, top: 500 };
 
     const output = {
-      left: -1000,
+      left: -2000,
       top: 500,
     };
     expect(helpers.cardMoveDirection(input)).toEqual(output);
@@ -97,7 +97,7 @@ describe('Test cardMoveDirection', () => {
 
     const output = {
       left: 500,
-      top: -1000,
+      top: -2000,
     };
     expect(helpers.cardMoveDirection(input)).toEqual(output);
   });
@@ -106,7 +106,7 @@ describe('Test cardMoveDirection', () => {
     const input = { playerId: 3, left: 500, top: 500 };
 
     const output = {
-      left: 1000,
+      left: 2000,
       top: 500,
     };
     expect(helpers.cardMoveDirection(input)).toEqual(output);

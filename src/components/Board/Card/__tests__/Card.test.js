@@ -127,7 +127,10 @@ describe('Test Card', () => {
 
       expect(component.setState).toBeCalled();
       expect(component.setState).toHaveBeenCalledTimes(1);
-      expect(component.setState).toHaveBeenCalledWith({ flip: true });
+      expect(component.setState).toHaveBeenCalledWith({
+        flip: true,
+        styling: { transitionDuration: '0.5s', zIndex: 1000 },
+      });
     });
   });
 
@@ -154,7 +157,7 @@ describe('Test Card', () => {
 
       expect(animation.pause).toBeCalled();
       expect(animation.pause).toHaveBeenCalledTimes(1);
-      expect(animation.pause).toHaveBeenCalledWith(400);
+      expect(animation.pause).toHaveBeenCalledWith(500);
     });
   });
 
