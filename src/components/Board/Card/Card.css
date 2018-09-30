@@ -3,14 +3,7 @@
     height: 75px;
     flex: 1 0 0;
     overflow-x: hidden;
-    /*perspective: 1000px;*/
-    /*z-index: 1;*/
 }
-
-/*.container {*/
-    /*display: flex;*/
-    /*width: 300px;*/
-/*}*/
 
 .card-container {
     flex: 1 0 0;

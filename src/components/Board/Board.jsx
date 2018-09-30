@@ -159,44 +159,53 @@ class Board extends PureComponent {
 
     return (
       <div className="wrapper">
-        <div className="top-row">
+        <div className="row-container">
           { cards[2] && (
             <p>
               Score:
               {score[2]}
             </p>
           )}
+          <div className="top-row">
+
           {this.renderPlayer({ player: 2, cards })}
+          </div>
         </div>
         <div className="middle-row">
-            <div className="player player-left">
+            <div className="row-container">
               { cards[1] && (
                 <p>
                   Score:
                   {score[1]}
                 </p>
               )}
+              <div className="player player-left">
               {this.renderPlayer({ player: 1, cards })}
+              </div>
             </div>
             <div className="player table" ref={this.refTable} />
-            <div className="player player-right">
+            <div className="row-container">
               { cards[3] && (
                 <p>
                   Score:
                   {score[3]}
                 </p>
               )}
+              <div className="player player-right">
               {this.renderPlayer({ player: 3, cards })}
+              </div>
             </div>
         </div>
-        <div className="bottom-row">
+        <div className="row-container">
           { cards[0] && (
             <p>
               Score:
               {score[0]}
             </p>
           )}
+          <div className="bottom-row">
           {this.renderPlayer({ player: 0, cards })}
+          </div>
         </div>
 
       </div>
