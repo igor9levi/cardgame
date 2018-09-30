@@ -75,6 +75,7 @@ class Card extends React.Component {
     flip: true,
     styling: {
       zIndex: 1000,
+      overflow: 'visible',
       transitionDuration: '0.5s',
     },
   })
