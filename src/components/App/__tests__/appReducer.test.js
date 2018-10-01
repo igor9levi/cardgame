@@ -71,7 +71,7 @@ describe('Test appReducer', () => {
   it('set error', () => {
     const error = { message: 'error' };
     const output = {
-      status: constants.APP_STATUS.WELCOME,
+      status: constants.APP_STATUS.ERROR,
       numPlayers: 0,
       deckId: null,
       error,
