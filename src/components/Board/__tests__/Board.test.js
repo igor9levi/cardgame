@@ -63,6 +63,17 @@ describe('Test Board component', () => {
     });
   });
 
+  describe('Test RenderPlayer', () => {
+    it('no cards or no player in cards', () => {
+      const board = new Board(props);
+      let result = board.renderPlayer({});
+      expect(result).toEqual(null);
+      result = board.renderPlayer({cards: {}});
+      expect(result).toEqual(null);
+    })
+  })
+
+
   describe('Test removeCard', () => {
     it('Adds card to purgatory', () => {
       const wrapper = shallow(

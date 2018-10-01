@@ -151,7 +151,7 @@ ShallowWrapper {
           className="row-container"
 >
           <p
-                    className="player-info"
+                    className="player-info me"
           >
                     Me
           </p>
@@ -501,7 +501,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <p
-              className="player-info"
+              className="player-info me"
 >
               Me
 </p>,
@@ -541,7 +541,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Me",
-              "className": "player-info",
+              "className": "player-info me",
             },
             "ref": null,
             "rendered": "Me",
@@ -703,7 +703,7 @@ ShallowWrapper {
             className="row-container"
 >
             <p
-                        className="player-info"
+                        className="player-info me"
             >
                         Me
             </p>
@@ -1053,7 +1053,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <p
-                className="player-info"
+                className="player-info me"
 >
                 Me
 </p>,
@@ -1093,7 +1093,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Me",
-                "className": "player-info",
+                "className": "player-info me",
               },
               "ref": null,
               "rendered": "Me",
@@ -1344,7 +1344,7 @@ ShallowWrapper {
           className="row-container"
 >
           <p
-                    className="player-info"
+                    className="player-info me"
           >
                     Me
           </p>
@@ -1694,7 +1694,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <p
-              className="player-info"
+              className="player-info me"
 >
               Me
 </p>,
@@ -1734,7 +1734,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Me",
-              "className": "player-info",
+              "className": "player-info me",
             },
             "ref": null,
             "rendered": "Me",
@@ -1896,7 +1896,7 @@ ShallowWrapper {
             className="row-container"
 >
             <p
-                        className="player-info"
+                        className="player-info me"
             >
                         Me
             </p>
@@ -2246,7 +2246,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <p
-                className="player-info"
+                className="player-info me"
 >
                 Me
 </p>,
@@ -2286,7 +2286,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Me",
-                "className": "player-info",
+                "className": "player-info me",
               },
               "ref": null,
               "rendered": "Me",

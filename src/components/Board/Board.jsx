@@ -198,7 +198,7 @@ class Board extends PureComponent {
         </div>
         { cards[0] && (
           <div className="row-container">
-            <p className="player-info">Me</p>
+            <p className="player-info me">Me</p>
             <p className="player-info">
               {`Score: ${score[0]}`}
             </p>
