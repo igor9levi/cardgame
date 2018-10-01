@@ -162,7 +162,7 @@ class Board extends PureComponent {
       <div className="wrapper" ref={this.refBoard}>
         { cards[2] && (
           <div className="row-container shrink">
-            <p className="player-info">Player 2</p>
+            <p className="player-info name">Player 2</p>
             <p className="player-info">
               {`Score: ${score[2]}`}
             </p>
@@ -174,7 +174,7 @@ class Board extends PureComponent {
         <div className="middle-row">
           { cards[1] && (
           <div className="row-container shrink">
-            <p className="player-info">Player 1</p>
+            <p className="player-info name">Player 1</p>
             <p className="player-info">
               {`Score: ${score[1]}`}
             </p>
@@ -186,7 +186,7 @@ class Board extends PureComponent {
           <div className="player table" ref={this.refTable} />
           { cards[3] && (
           <div className="row-container shrink">
-            <p className="player-info">Player 3</p>
+            <p className="player-info name">Player 3</p>
             <p className="player-info">
               {`Score: ${score[3]}`}
             </p>
@@ -198,7 +198,7 @@ class Board extends PureComponent {
         </div>
         { cards[0] && (
           <div className="row-container">
-            <p className="player-info me">Me</p>
+            <p className="player-info name me">me</p>
             <p className="player-info">
               {`Score: ${score[0]}`}
             </p>

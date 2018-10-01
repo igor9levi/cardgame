@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="49434ece-04b0-4a1f-9929-902263f28674" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/__tests__/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/__tests__/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/__tests__/__snapshots__/App.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/__tests__/__snapshots__/App.test.js.snap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +20,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="8" />
-          <entry key="project.open.time.10" value="20" />
+          <entry key="project.open.time.10" value="21" />
           <entry key="project.open.time.11" value="15" />
           <entry key="project.open.time.12" value="7" />
           <entry key="project.open.time.13" value="6" />
@@ -33,8 +29,8 @@
           <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="10" />
           <entry key="project.open.time.8" value="83" />
-          <entry key="project.open.time.9" value="62" />
-          <entry key="project.opened" value="215" />
+          <entry key="project.open.time.9" value="63" />
+          <entry key="project.opened" value="217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,24 +56,24 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="213" />
+          <entry key="ESLintLanguageService" value="215" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1817" />
+          <entry key="css" value="1936" />
           <entry key="eslintrc" value="25" />
           <entry key="js" value="31853" />
           <entry key="json" value="123" />
-          <entry key="jsx" value="7443" />
+          <entry key="jsx" value="7476" />
           <entry key="txt" value="882" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1817" />
+          <entry key="CSS" value="1936" />
           <entry key="JSON" value="148" />
-          <entry key="JSX Harmony" value="7443" />
+          <entry key="JSX Harmony" value="7476" />
           <entry key="JavaScript" value="31853" />
           <entry key="PLAIN_TEXT" value="882" />
         </counts>
@@ -96,26 +92,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
+            <state relative-caret-position="816">
               <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="196" column="12" lean-forward="true" selection-start-line="196" selection-start-column="12" selection-end-line="196" selection-end-column="12" />
+            <state relative-caret-position="634">
+              <caret line="200" column="42" selection-start-line="200" selection-start-column="42" selection-end-line="200" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Board/Board.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            <state relative-caret-position="481">
+              <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -123,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="595">
               <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -136,23 +132,6 @@
                 <element signature="e#435#524#0" />
                 <element signature="e#804#835#0" />
                 <element signature="e#1122#1276#0" />
-                <element signature="e#1322#2296#0" />
-                <element signature="e#1363#1582#0" />
-                <element signature="e#1649#1871#0" />
-                <element signature="e#1932#2290#0" />
-                <element signature="e#2341#2805#0" />
-                <element signature="e#2411#2799#0" />
-                <element signature="e#2849#3308#0" />
-                <element signature="e#2911#3302#0" />
-                <element signature="e#3356#4488#0" />
-                <element signature="e#3411#4001#0" />
-                <element signature="e#4058#4482#0" />
-                <element signature="e#4528#4970#0" />
-                <element signature="e#4587#4964#0" />
-                <element signature="e#5009#6659#0" />
-                <element signature="e#5046#5403#0" />
-                <element signature="e#5455#6040#0" />
-                <element signature="e#6103#6653#0" />
               </folding>
             </state>
           </provider>
@@ -244,8 +223,8 @@
         <option value="$PROJECT_DIR$/src/components/App/__tests__/App.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js" />
-        <option value="$PROJECT_DIR$/src/components/Board/Board.css" />
         <option value="$PROJECT_DIR$/src/components/Board/Board.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Board/Board.css" />
       </list>
     </option>
   </component>
@@ -289,42 +268,6 @@
               <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
               <item name="cardgame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Board" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardgame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Board" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cardgame" type="b2602c69:ProjectViewProjectNode" />
@@ -620,6 +563,8 @@
       <workItem from="1538423697736" duration="1142000" />
       <workItem from="1538426132435" duration="1060000" />
       <workItem from="1538427382861" duration="1003000" />
+      <workItem from="1538429165294" duration="1183000" />
+      <workItem from="1538430381868" duration="735000" />
     </task>
     <task id="LOCAL-00001" summary="fix(lint errors): 2 space erro">
       <created>1536090772834</created>
@@ -968,13 +913,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210414000" />
+    <option name="totallyTimeSpent" value="212332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19395973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19932885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1311,9 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="79" column="4" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1364,22 +1306,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
+        <state relative-caret-position="816">
           <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Board/__tests__/Board.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="595">
           <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1392,38 +1331,21 @@
             <element signature="e#435#524#0" />
             <element signature="e#804#835#0" />
             <element signature="e#1122#1276#0" />
-            <element signature="e#1322#2296#0" />
-            <element signature="e#1363#1582#0" />
-            <element signature="e#1649#1871#0" />
-            <element signature="e#1932#2290#0" />
-            <element signature="e#2341#2805#0" />
-            <element signature="e#2411#2799#0" />
-            <element signature="e#2849#3308#0" />
-            <element signature="e#2911#3302#0" />
-            <element signature="e#3356#4488#0" />
-            <element signature="e#3411#4001#0" />
-            <element signature="e#4058#4482#0" />
-            <element signature="e#4528#4970#0" />
-            <element signature="e#4587#4964#0" />
-            <element signature="e#5009#6659#0" />
-            <element signature="e#5046#5403#0" />
-            <element signature="e#5455#6040#0" />
-            <element signature="e#6103#6653#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Board/Board.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="196" column="12" lean-forward="true" selection-start-line="196" selection-start-column="12" selection-end-line="196" selection-end-column="12" />
+        <state relative-caret-position="634">
+          <caret line="200" column="42" selection-start-line="200" selection-start-column="42" selection-end-line="200" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Board/Board.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
         </state>
       </provider>
     </entry>

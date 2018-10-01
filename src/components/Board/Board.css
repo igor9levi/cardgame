@@ -73,7 +73,11 @@
     align-self: flex-start;
     color: #fff;
     font-weight: bold;
-    font-family: Inconsolata;
+}
+
+.name {
+    font-family: Gabriola, sans-serif;
+    font-size: 20px;
 }
 
 .me {
