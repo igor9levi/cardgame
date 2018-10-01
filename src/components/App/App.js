@@ -5,6 +5,7 @@ import { APP_STATUS } from './appConstants';
 import Board from '../Board';
 import Welcome from '../Welcome';
 import ScoreBoard from '../ScoreBoard';
+import Error from '../Error';
 
 export class App extends Component {
   renderApp = () => {
@@ -20,6 +21,10 @@ export class App extends Component {
 
     if (status === APP_STATUS.END) {
       return <ScoreBoard />;
+    }
+
+    if (status === APP_STATUS.ERROR) {
+      return <Error />;
     }
 
     return <h1>Loading...</h1>;

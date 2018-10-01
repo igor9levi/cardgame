@@ -12,6 +12,7 @@ export const APP_STATUS = {
   LOADING: 2,
   PLAY: 3,
   END: 4,
+  ERROR: 5,
 };
 export const CARD_VALUE_MAPPER = {
   KING: 13,

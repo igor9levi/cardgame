@@ -74,7 +74,6 @@ class Card extends React.Component {
   rotateCard = () => this.setState({
     flip: true,
     styling: {
-      zIndex: 1000,
       overflow: 'visible',
       transitionDuration: '0.5s',
     },
@@ -88,7 +87,7 @@ class Card extends React.Component {
     const leftPosition = center.centerX + left;
     const topPosition = center.centerY + top;
 
-    await animation.pause(500);
+    await animation.pause(1000);
 
     this.setState({
       centered: true,

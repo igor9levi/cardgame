@@ -32,6 +32,7 @@ export default (state = constants.INITIAL_STATE, action) => {
       return {
         ...state,
         error: action.payload,
+        status: constants.APP_STATUS.ERROR,
       };
     default:
       return state;
